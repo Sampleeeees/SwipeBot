@@ -1,0 +1,20 @@
+from aiogram.fsm.state import State, StatesGroup
+
+class AnnouncementCreateState(StatesGroup):
+    house = State()
+    section = State()
+    corps = State()
+    floor = State()
+    room_count = State()
+    price = State()
+    area = State()
+    kitchen_area = State()
+    balcony = State()
+    commission = State()
+    district = State()
+    micro_district = State()
+    live_condition = State()
+    planning = State()
+    scheme = State()
+    photo_gallery = State()
+    location = State()
