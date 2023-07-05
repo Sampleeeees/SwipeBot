@@ -24,7 +24,8 @@ def set_tokens(data: dict, user_id: int) -> None:
             user_id=user_data.get('user_id'),
             token=data.get('access'),
             refresh_token=data.get('refresh'),
-            is_auth=True
+            is_auth=True,
+            language='uk'
         )
         user.update()
     else:
@@ -32,9 +33,22 @@ def set_tokens(data: dict, user_id: int) -> None:
             user_id=user_id,
             token=data.get('access'),
             refresh_token=data.get('refresh'),
-            is_auth=True
+            is_auth=True,
+            language='uk'
         )
         user.save()
+
+async def set_language_user_db(user_id, lang) -> None:
+    user_data = User.find_user(user_id=user_id)
+    if user_data:
+        user = User(
+            user_id=user_data.get('user_id'),
+            token=user_data.get('access'),
+            refresh_token=user_data.get('refresh'),
+            is_auth=user_data['is_auth'],
+            language=lang
+        )
+        user.update()
 
 
 def update_token(token: str, user_id: int) -> None:
@@ -103,4 +117,10 @@ def is_authenticated(user_id: int) -> bool:
         if user['is_auth'] is True:
             return True
     return False
+
+def get_info_user(user_id) -> str:
+    user = User.find_user(user_id=user_id)
+    print('User[language]', user['language'])
+    return user['language']
+
 

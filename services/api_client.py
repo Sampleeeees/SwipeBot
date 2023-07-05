@@ -4,11 +4,10 @@ import httpx
 from yarl import URL
 from database.database import get_refresh_token, get_token, set_tokens, logout, update_token, is_authenticated
 
-
 class APIClient:
     def __init__(self, user):
         self.user = user
-        self.url = URL('http://194.146.38.190/')
+        self.url = URL('http://193.160.119.121/')
 
     async def send_refresh_token(self):
         async with httpx.AsyncClient() as client:
@@ -34,11 +33,6 @@ class APIClient:
         return response
 
 
-class Test(APIClient):
-
-    def test(self):
-        return self.send_refresh_token()
-
 
 class UserAPIClient(APIClient):
 
@@ -51,15 +45,18 @@ class UserAPIClient(APIClient):
 
     async def register_user(self, user_data: dict) -> bool:
         data = {
-            'email': user_data.get('user_data'),
+            'email': user_data.get('email'),
             'password1': user_data.get('password1'),
             'password2': user_data.get('password2'),
             'name': user_data.get('name'),
-            'surname': user_data.get('username')
+            'surname': user_data.get('surname')
         }
         async with httpx.AsyncClient() as client:
-            request = await client.post(url=str(self.url.with_path('api/registration/user/')), data=data)
+            request = client.build_request(method='POST', url=str(self.url.with_path('api/registration/user/')),
+                                                 data=data, headers={'accept': 'application/json'})
             response = await self.send_request(request)
+            print(response.text)
+            print('JSON Response:', response.json())
             if response.status_code == 201:
                 return True
             else:
@@ -78,6 +75,52 @@ class UserAPIClient(APIClient):
                 return True
             else:
                 return False
+
+    async def get_houses(self):
+        async with httpx.AsyncClient() as client:
+            request = client.build_request(method='GET', url=str(self.url.with_path('api/v1/house/')),
+                                           headers=self.headers())
+            response = await self.send_request(request)
+            if response.status_code == 200:
+                houses = response.json().get('results')
+                print(houses)
+                return houses
+            else:
+                return False
+
+    async def get_house_sections(self):
+        async with httpx.AsyncClient() as client:
+            request = client.build_request(method='GET', url=str(self.url.with_path('api/v1/section/')),
+                                           headers=self.headers())
+            response = await self.send_request(request)
+            if response.status_code == 200:
+                sections = response.json().get('results')
+                return sections
+            else:
+                return False
+
+    async def get_house_corps(self):
+        async with httpx.AsyncClient() as client:
+            request = client.build_request(method='GET', url=str(self.url.with_path('api/v1/corps/')),
+                                           headers=self.headers())
+            response = await self.send_request(request)
+            if response.status_code == 200:
+                corps = response.json().get('results')
+                return corps
+            else:
+                return False
+
+    async def get_house_floors(self):
+        async with httpx.AsyncClient() as client:
+            request = client.build_request(method='GET', url=str(self.url.with_path('api/v1/floor/')),
+                                           headers=self.headers())
+            response = await self.send_request(request)
+            if response.status_code == 200:
+                floors = response.json().get('results')
+                return floors
+            else:
+                return False
+
 
     async def profile(self):
         async with httpx.AsyncClient() as client:
@@ -144,6 +187,7 @@ class AnnouncementAPIClient(APIClient):
             else:
                 return False
 
+
     async def get_flat(self, pk):
         async with httpx.AsyncClient() as client:
             request = client.build_request(method='GET', url=str(self.url.with_path(f'api/v1/flat/{pk}/user/detail/')),
@@ -196,6 +240,16 @@ class AnnouncementAPIClient(APIClient):
             else:
                 return False
 
+    async def list_all_announcement(self):
+        async with httpx.AsyncClient() as client:
+            request = client.build_request(method='GET', url=str(self.url.with_path("api/v1/announcement/")),
+                                           headers=self.headers())
+            response = await self.send_request(request)
+            if response.status_code == 200:
+                return response.json()['results']
+            else:
+                return False
+
     async def get_announcement(self, pk):
         async with httpx.AsyncClient() as client:
             request = client.build_request(method='GET', url=str(self.url.with_path(f"api/v1/announcement/{pk}/")),
@@ -205,6 +259,39 @@ class AnnouncementAPIClient(APIClient):
                 return response.json()
             else:
                 return False
+
+    async def create_announcement_flat(self, flat_id):
+        async with httpx.AsyncClient() as client:
+            request = client.build_request(method='POST', url=str(self.url.with_path(f"api/v1/announcement/")),
+                                           json={'flat': flat_id,
+                                                 'confirm': True}, headers=self.headers())
+            response = await self.send_request(request)
+            if response.status_code == 201:
+                return True
+            return False
+
+    async def create_announcement_user(self, user_data: dict):
+        async with httpx.AsyncClient() as client:
+            request = client.build_request(method='POST', url=str(self.url.with_path('api/v1/flat/user/create/')),
+                                           json=user_data,
+                                           headers=self.headers())
+            response = await self.send_request(request)
+            print(response)
+            if response.status_code == 201:
+                return await self.create_announcement_flat(flat_id=response.json()['id'])
+            else:
+                return False
+
+    async def update_announcement_user(self, user_data: dict, flat_id):
+        async with httpx.AsyncClient() as client:
+            request = client.build_request(method='PATCH', url=str(self.url.with_path(f'api/v1/flat/{flat_id}/')),
+                                           json=user_data,
+                                           headers=self.headers())
+            response = await self.send_request(request)
+            print(response.text)
+            if response.status_code == 200:
+                return True
+            return False
 
 
 

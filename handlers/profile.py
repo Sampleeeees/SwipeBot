@@ -14,7 +14,8 @@ from keyboards.general.menu import main_kb
 from keyboards.general.profile import profile_menu_kb, general_profile_menu_kb
 from validators.check_input_email import is_valid_email
 from states.profile_state import ProfileState
-from handlers.check import url
+from states.announ_create import AnnouncementCreateState
+from handlers.start import url
 router = Router()
 
 @router.message(Text('Профіль'))
@@ -72,3 +73,4 @@ async def cmd_menu_profile(message: types.Message, state: FSMContext):
     await state.clear()
     await message.answer('Ви перейшли до меню профілю', reply_markup=profile_menu_kb())
     await state.set_state(ProfileState.my_profile)
+
