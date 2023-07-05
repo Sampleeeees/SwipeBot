@@ -8,8 +8,6 @@ client = MongoClient("mongodb://localhost:27017/swipe_tg")
 mydb = client['swipe_tg']
 
 
-for it in mydb.announcements.find({}):
-    print(it)
 
 def set_tokens(data: dict, user_id: int) -> None:
     """
@@ -120,7 +118,6 @@ def is_authenticated(user_id: int) -> bool:
 
 def get_info_user(user_id) -> str:
     user = User.find_user(user_id=user_id)
-    print('User[language]', user['language'])
     return user['language']
 
 

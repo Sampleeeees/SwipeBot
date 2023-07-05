@@ -4,18 +4,12 @@ from aiogram.filters import Command, Text
 from aiogram.types import ReplyKeyboardRemove
 from aiogram.fsm.context import FSMContext
 from services.api_client import UserAPIClient, is_authenticated
-import states.login_state
-from database.users import User
-import json
-import html
-from config.config_reader import config
-from keyboards.general.login_and_registration import login_register_kb, cancel_kb
+
+from keyboards.general.login_and_registration import login_register_kb
 from keyboards.general.menu import main_kb
 from keyboards.general.profile import profile_menu_kb, general_profile_menu_kb
-from validators.check_input_email import is_valid_email
 from states.profile_state import ProfileState
-from states.announ_create import AnnouncementCreateState
-from handlers.start import url
+
 router = Router()
 
 @router.message(Text('Профіль'))

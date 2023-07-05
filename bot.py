@@ -11,7 +11,7 @@ from aioredis import Redis
 from middleware.locale import Localization
 
 redis = Redis()
-i18n = I18n(path='locales', default_locale='ua', domain='ApiSwipeBot')
+i18n = I18n(path='locales', default_locale='uk', domain='ApiSwipeBot')
 
 
 

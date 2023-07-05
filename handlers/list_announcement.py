@@ -179,7 +179,7 @@ async def announcement_step(callback: types.CallbackQuery, callback_data: Announ
                 user_data[user_id] -= 1
             except NegativeIndexError:
                 await callback.answer(
-                    'Це було перше оголошення'
+                    'Це перше оголошення'
                 )
                 user_data[user_id] += 1
     except KeyError:

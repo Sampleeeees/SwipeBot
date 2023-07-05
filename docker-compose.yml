@@ -1,27 +1,27 @@
 version: '3.7'
 
 services:
-
-  app:
+  bot:
     build: .
     command: make run
     env_file:
-      - .env
+      - ./.env
     restart: always
 
   redis:
-    image: 'redis:alpine'
+    image: redis:alpine
     volumes:
       - cache:/data
     restart: always
 
-  mongodb:
+  mongo:
     image: mongo:5.0
     volumes:
       - mongo:/data/db
-    env_file:
-      - .env
+    environment:
+      - ./.env
     restart: always
+
 
 volumes:
   cache:

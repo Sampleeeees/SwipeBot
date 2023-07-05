@@ -1,5 +1,7 @@
 from aiogram import Router, F, types, Bot
 from aiogram.fsm.context import FSMContext
+
+from states.login_state import LoginState
 from states.register_state import RegisterStates
 from keyboards.general.login_and_registration import cancel_kb, login_register_kb, edit_register_kb, log_kb
 from services.api_client import UserAPIClient
@@ -9,6 +11,15 @@ from aiogram.utils.i18n import gettext as _
 
 router = Router()
 
+
+@router.message(RegisterStates(), F.text == 'Відмінити')
+async def cmd_register_cancel(message: types.Message, state: FSMContext):
+    await state.set_state(LoginState.menu)
+    await message.answer(
+        _('Вітаю в системі Swipe \n'
+          'Увійдіть або зареєструйтесь'),
+        reply_markup=login_register_kb()
+    )
 
 @router.message(RegisterStates.email, F.text)
 @router.message(RegisterStates.email_edit, F.text)
@@ -45,12 +56,6 @@ async def register_email(message: types.Message, state: FSMContext):
         else:
             await message.answer('Ви ввели невірний email. Повторіть спробу')
 
-
-@router.message(RegisterStates(), F.text == 'Відмінити')
-async def cmd_register_cancel(message: types.Message, state: FSMContext):
-    await state.clear()
-    await message.answer(text='Ви повернулися до меню входу в систему',
-                         reply_markup=login_register_kb())
 
 
 @router.message(RegisterStates.name, F.text)
