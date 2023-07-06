@@ -79,7 +79,7 @@ async def get_image(path=None):
     return image
 
 
-@router.message(Text(_('Мої оголошення')))
+@router.message(ProfileState.my_profile, F.text == __('Мої оголошення'))
 async def cmd_list_announcement(message: types.Message, state: FSMContext):
     await state.set_state(ProfileState.my_profile)
     user_id = message.from_user.id

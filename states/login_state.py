@@ -4,3 +4,6 @@ class LoginState(StatesGroup):
     email = State()
     password = State()
     menu = State()
+
+class MenuState(StatesGroup):
+    menu = State()

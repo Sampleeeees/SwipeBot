@@ -11,8 +11,9 @@ from services.api_client import AnnouncementAPIClient
 from handlers.announcement_detail import get_full_flat_data, DEFAULT_IMAGE
 from keyboards.inline.announcement import inline_announcement_kb, AnnouncementCallback
 from aiogram.utils.i18n import gettext as _
+from aiogram.utils.i18n import lazy_gettext as __
 
-from states.login_state import LoginState
+from states.login_state import LoginState, MenuState
 
 router = Router()
 
@@ -55,7 +56,7 @@ class AnnouncementStates(StatesGroup):
 
 user_data = {}
 
-@router.message(Text(_('Оголошення')))
+@router.message(MenuState.menu, F.text == __('Оголошення'))
 async def announcement_feed(message: types.Message, state: FSMContext, bot: Bot):
     user_id = message.from_user.id
     user = AnnouncementAPIClient(user_id)
@@ -129,7 +130,7 @@ async def announcement_feed(message: types.Message, state: FSMContext, bot: Bot)
         await message.answer(
             _('Увійдіть або зареєструйтесь'),
             reply_markup=login_register_kb())
-        await state.clear()
+        await state.set_state(LoginState.menu)
 
 
 @router.callback_query(AnnouncementCallback.filter(F.step.startswith('go_')))

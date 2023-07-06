@@ -4,22 +4,24 @@ from aiogram.filters import Command, Text
 from aiogram.types import ReplyKeyboardRemove
 from aiogram.fsm.context import FSMContext
 from services.api_client import UserAPIClient, is_authenticated
-from aiogram.utils.i18n import gettext as _
+from aiogram.utils.i18n import gettext as _, get_i18n
 from aiogram.utils.i18n import lazy_gettext as __
 from keyboards.general.login_and_registration import login_register_kb
 from keyboards.general.menu import main_kb
 from keyboards.general.profile import profile_menu_kb, general_profile_menu_kb
-from states.login_state import LoginState
+from states.login_state import LoginState, MenuState
 from states.profile_state import ProfileState
 
 router = Router()
 
-@router.message(Text(_('Профіль')))
+@router.message(MenuState.menu, F.text == 'Профіль')
+@router.message(MenuState.menu, F.text == 'Profile')
 async def cmd_profile(message: types.Message, state: FSMContext):
+
     new = await state.set_state(ProfileState.my_profile)
     print(new)
     await message.answer(
-        text=_('Привіт {user} ти перейшов в меню профілю').format(user=message.from_user.id),
+        text=_('Привіт {user} ти перейшов в меню профілю').format(user=message.from_user.full_name),
         reply_markup=profile_menu_kb()
     )
 
@@ -66,14 +68,13 @@ async def my_profile(message: types.Message, state: FSMContext):
 async def cmd_general_menu(message: types.Message, state: FSMContext):
     currrent = await state.get_state()
     print(currrent)
-    await state.clear()
+    await state.set_state(MenuState.menu)
     await message.answer(_('Ви перейшли до головного меню'), reply_markup=main_kb())
 
 @router.message(ProfileState.my_profile, F.text == __('Меню профілю'))
 async def cmd_menu_profile(message: types.Message, state: FSMContext):
     current = await state.get_state()
     print('Menu_profile', current)
-    await state.clear()
     await message.answer(_('Ви перейшли до меню профілю'), reply_markup=profile_menu_kb())
     await state.set_state(ProfileState.my_profile)
 

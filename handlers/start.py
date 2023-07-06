@@ -9,7 +9,7 @@ from aiogram.utils.i18n import lazy_gettext as __
 from keyboards.general.login_and_registration import login_register_kb, cancel_kb
 from keyboards.general.menu import main_kb
 from validators.check_input_email import is_valid_email
-from states.login_state import LoginState
+from states.login_state import LoginState, MenuState
 from states.register_state import RegisterStates
 
 router = Router()
@@ -92,10 +92,12 @@ async def cmd_password(message: types.Message, state: FSMContext) -> None:
         response = await user.login(data)
         print("Response", response)
         if response:
+            await state.set_state(MenuState.menu)
             await message.answer(
                 text=_('Вхід виконано'),
                 reply_markup=main_kb()
             )
+
         else:
             await state.clear()
             await message.answer(

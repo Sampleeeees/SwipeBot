@@ -2,6 +2,7 @@ import base64
 import json
 import os.path
 from aiogram.utils.i18n import gettext as _
+from aiogram.utils.i18n import lazy_gettext as __
 from keyboards.general.menu import main_kb
 from services.api_client import UserAPIClient, AnnouncementAPIClient
 from aiogram import Router, F, types, Bot
@@ -17,6 +18,7 @@ from keyboards.general.announcement import (balcony_bool,
                                             floor_kb,
                                             request_location_kb,
                                             edit_announcement_kb)
+from states.login_state import MenuState
 from validators.create_announcement_validator import (balcony_validator,
                                                       living_condition_validator,
                                                       planning_validator,
@@ -39,7 +41,7 @@ def decode_image(file_path, exs):
         encoded_string = base64.b64encode(image_read.read())
     return f"data:image/{exs[1::]};base64,{encoded_string.decode('ascii')}"
 
-@router.message(Text(_('Створити оголошення')))
+@router.message(MenuState.menu, F.text == __('Створити оголошення'))
 async def start_create_announcement(message: types.Message, state: FSMContext):
     await state.clear()
     await message.answer(_('Ви перейшли до створення оголошення'))
