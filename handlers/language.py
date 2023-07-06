@@ -5,6 +5,7 @@ from aiogram.fsm.state import StatesGroup, State
 from database.database import set_language_user_db
 from keyboards.general.language import language_kb
 from keyboards.general.menu import main_kb
+from aiogram.utils.i18n import gettext as _
 
 router = Router()
 
@@ -12,9 +13,9 @@ class LanguageStates(StatesGroup):
     check = State()
 
 
-@router.message(Text('Мова'))
+@router.message(Text(_('Мова')))
 async def select_language(message: types.Message, state: FSMContext):
-    await message.answer('Оберіть мову',
+    await message.answer(_('Оберіть мову'),
                          reply_markup=language_kb())
     await state.set_state(LanguageStates.check)
 

@@ -1,6 +1,7 @@
 import httpx
 from aiogram.utils.keyboard import ReplyKeyboardBuilder, ReplyKeyboardMarkup
 from services.api_client import UserAPIClient
+from aiogram.utils.i18n import gettext as _
 
 async def house_kb(user_id: int) -> ReplyKeyboardMarkup:
     kb = ReplyKeyboardBuilder()
@@ -45,53 +46,53 @@ async def floor_kb(house_name: str, user_id: int) -> ReplyKeyboardMarkup:
 
 def balcony_bool() -> ReplyKeyboardMarkup:
     kb = ReplyKeyboardBuilder()
-    kb.button(text='Так')
-    kb.button(text='Ні')
+    kb.button(text=_('Так'))
+    kb.button(text=_('Ні'))
     kb.adjust(2)
     return kb.as_markup(resize_keyboard=True)
 
 def living_condition_kb() -> ReplyKeyboardMarkup:
     kb = ReplyKeyboardBuilder()
-    kb.button(text='Чорнова')
-    kb.button(text='Потрібен ремонт')
-    kb.button(text='В жилому стані')
+    kb.button(text=_('Чорнова'))
+    kb.button(text=_('Потрібен ремонт'))
+    kb.button(text=_('В жилому стані'))
     kb.adjust(3)
     return kb.as_markup(resize_keyboard=True)
 
 def planning_kb() -> ReplyKeyboardMarkup:
     kb = ReplyKeyboardBuilder()
-    kb.button(text='Студія-санвузол')
-    kb.button(text='Студія')
+    kb.button(text=_('Студія-санвузол'))
+    kb.button(text=_('Студія'))
     return kb.as_markup(resize_keyboard=True)
 
 
 def request_location_kb() -> ReplyKeyboardMarkup:
     kb = ReplyKeyboardBuilder()
-    kb.button(text='Надіслати геолокацію', request_location=True)
+    kb.button(text=_('Надіслати геолокацію'), request_location=True)
     return kb.as_markup(resize_keyboard=True)
 
 
 def edit_announcement_kb() -> ReplyKeyboardMarkup:
     kb = ReplyKeyboardBuilder()
-    kb.button(text='Редагувати будинок')
-    kb.button(text='Редагувати секцію')
-    kb.button(text='Редагувати корпус')
-    kb.button(text='Редагувати поверх')
-    kb.button(text='Редагувати к-сть кімнат')
-    kb.button(text='Редагувати ціну')
-    kb.button(text='Редагувати площу')
-    kb.button(text='Редагувати площу кухні')
-    kb.button(text='Редагувати балкон')
-    kb.button(text='Редагувати комісію')
-    kb.button(text='Редагувати вулицю')
-    kb.button(text='Редагувати район')
-    kb.button(text='Редагувати стан')
-    kb.button(text='Редагувати планування')
-    kb.button(text='Редагувати схему')
-    kb.button(text='Редагувати фото')
-    kb.button(text='Редагувати локацію')
-    kb.button(text='Відмінити')
-    kb.button(text='Створити')
+    kb.button(text=_('Редагувати будинок'))
+    kb.button(text=_('Редагувати секцію'))
+    kb.button(text=_('Редагувати корпус'))
+    kb.button(text=_('Редагувати поверх'))
+    kb.button(text=_('Редагувати к-сть кімнат'))
+    kb.button(text=_('Редагувати ціну'))
+    kb.button(text=_('Редагувати площу'))
+    kb.button(text=_('Редагувати площу кухні'))
+    kb.button(text=_('Редагувати балкон'))
+    kb.button(text=_('Редагувати комісію'))
+    kb.button(text=_('Редагувати вулицю'))
+    kb.button(text=_('Редагувати район'))
+    kb.button(text=_('Редагувати стан'))
+    kb.button(text=_('Редагувати планування'))
+    kb.button(text=_('Редагувати схему'))
+    kb.button(text=_('Редагувати фото'))
+    kb.button(text=_('Редагувати локацію'))
+    kb.button(text=_('Відмінити'))
+    kb.button(text=_('Створити'))
     kb.adjust(4, 4, 4, 4, 1, 2)
     return kb.as_markup(resize_keyboard=True)
 

@@ -4,34 +4,36 @@ from aiogram.filters import Command, Text
 from aiogram.types import ReplyKeyboardRemove
 from aiogram.fsm.context import FSMContext
 from services.api_client import UserAPIClient, is_authenticated
-
+from aiogram.utils.i18n import gettext as _
+from aiogram.utils.i18n import lazy_gettext as __
 from keyboards.general.login_and_registration import login_register_kb
 from keyboards.general.menu import main_kb
 from keyboards.general.profile import profile_menu_kb, general_profile_menu_kb
+from states.login_state import LoginState
 from states.profile_state import ProfileState
 
 router = Router()
 
-@router.message(Text('Профіль'))
+@router.message(Text(_('Профіль')))
 async def cmd_profile(message: types.Message, state: FSMContext):
     new = await state.set_state(ProfileState.my_profile)
     print(new)
     await message.answer(
-        text=f'Привіт {message.from_user.full_name} ти перейшов в меню профілю',
+        text=_('Привіт {user} ти перейшов в меню профілю').format(user=message.from_user.id),
         reply_markup=profile_menu_kb()
     )
 
-@router.message(ProfileState.my_profile, F.text == 'Відмінити')
+@router.message(ProfileState.my_profile, F.text == __('Відмінити'))
 async def cmd_cancel_profile(message: types.Message, state: FSMContext):
     current = await state.get_state()
-    await state.clear()
+    await state.set_state(LoginState.menu)
     print('Cancel', current)
     await message.answer(
         text='Ти тепер в головному меню',
         reply_markup=main_kb()
     )
 
-@router.message(ProfileState.my_profile, F.text == 'Мій профіль')
+@router.message(ProfileState.my_profile, F.text == __('Мій профіль'))
 async def my_profile(message: types.Message, state: FSMContext):
     current = await state.get_state()
     print(current)
@@ -41,30 +43,37 @@ async def my_profile(message: types.Message, state: FSMContext):
         data = await user.profile()
         print(data)
         await message.answer(
-            f'Telegram: <b>@{message.from_user.username}</b> \n'
-            f"Ім'я та прізвище: <b>{data.get('name')} {data.get('surname')}</b>\n"
-            f"Пошта: <b>{data.get('email')}</b>\n"
-            f'Номер телефону: <b>{data.get("phone_number")}</b> \n'
-            f'Роль: <b>{data.get("role").get("name_role")}</b>',
+            _('Telegram: <b>@{username}</b> \n'
+              "Ім'я та прізвище: <b>{name} {surname}</b>\n"
+              "Пошта: <b>{email}</b>\n"
+              'Номер телефону: <b>{phone_number}</b> \n'
+              'Роль: <b>{role}</b>').format(
+                username=message.from_user.username,
+                name=data.get('name'),
+                surname=data.get('surname'),
+                email=data.get('email'),
+                phone_number=data.get('phone_number'),
+                role=data.get('role').get('name_role')
+            ),
             reply_markup=general_profile_menu_kb(), parse_mode='HTML'
         )
     else:
-        await message.answer('Будь-ласка увійдіть в профіль або зареєструйтесь',
+        await message.answer(_('Будь-ласка увійдіть в профіль або зареєструйтесь'),
                              reply_markup=login_register_kb())
         await state.clear()
 
-@router.message(ProfileState.my_profile, F.text == 'Головне меню')
+@router.message(ProfileState.my_profile, F.text == __('Головне меню'))
 async def cmd_general_menu(message: types.Message, state: FSMContext):
     currrent = await state.get_state()
     print(currrent)
     await state.clear()
-    await message.answer('Ви перейшли до головного меню', reply_markup=main_kb())
+    await message.answer(_('Ви перейшли до головного меню'), reply_markup=main_kb())
 
-@router.message(ProfileState.my_profile, F.text == 'Меню профілю')
+@router.message(ProfileState.my_profile, F.text == __('Меню профілю'))
 async def cmd_menu_profile(message: types.Message, state: FSMContext):
     current = await state.get_state()
     print('Menu_profile', current)
     await state.clear()
-    await message.answer('Ви перейшли до меню профілю', reply_markup=profile_menu_kb())
+    await message.answer(_('Ви перейшли до меню профілю'), reply_markup=profile_menu_kb())
     await state.set_state(ProfileState.my_profile)
 

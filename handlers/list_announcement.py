@@ -55,14 +55,14 @@ class AnnouncementStates(StatesGroup):
 
 user_data = {}
 
-@router.message(Text('Оголошення'))
+@router.message(Text(_('Оголошення')))
 async def announcement_feed(message: types.Message, state: FSMContext, bot: Bot):
     user_id = message.from_user.id
     user = AnnouncementAPIClient(user_id)
     user_data[user_id] = 0
     if is_authenticated(user_id):
         await message.answer(
-            _('Добро пожаловать в ленту объявлений'),
+            _('Вітаю в списку оголошень'),
             reply_markup=main_kb()
         )
         data = await user.list_all_announcement()
@@ -86,20 +86,35 @@ async def announcement_feed(message: types.Message, state: FSMContext, bot: Bot)
                 print(flat)
                 print(house)
 
-                caption_text = f'Будинок: {house} \n' \
-                                   f'Секція: {section["name"]}\n' \
-                                   f'Поверх: {floor["name"]}\n' \
-                                   f'Корпус: {corps["name"]}\n' \
-                                   f'К-сть кімнат: {flat["room_amount"]}\n' \
-                                   f'Ціна: {flat["price"]}\n' \
-                                   f'Площа: {flat["square"]}\n' \
-                                   f'Площа кухні: {flat["kitchen_square"]}\n' \
-                                   f'Балкон: {flat["balcony"]}\n' \
-                                   f'Комісія: {flat["commission"]}\n' \
-                                   f'Вулиця: {flat["district"]}\n' \
-                                   f'Район: {flat["micro_district"]}\n' \
-                                   f'Стан: {flat["living_condition"]}\n' \
-                                   f'Планування: {flat["planning"]}\n'
+                caption_text = _('Будинок: {house} \n'
+                                 'Секція: {section}\n'
+                                 'Поверх: {floor}\n'
+                                 'Корпус: {corps}\n'
+                                 'К-сть кімнат: {room_amount}\n'
+                                 'Ціна: {price}\n'
+                                 'Площа: {square}\n'
+                                 'Площа кухні: {kitchen_square}\n'
+                                 'Балкон: {balcony}\n'
+                                 'Комісія: {commission}\n'
+                                 'Вулиця: {district}\n'
+                                 'Район: {micro_district}\n'
+                                 'Стан: {living_condition}\n'
+                                 'Планування: {planning}\n').format(
+                    house=house,
+                    section=section['name'],
+                    floor=floor['name'],
+                    corps=corps['name'],
+                    room_amount=flat['room_amount'],
+                    price=flat['price'],
+                    square=flat['square'],
+                    kitchen_square=flat['kitchen_square'],
+                    balcony=flat['balcony'],
+                    commission=flat['commission'],
+                    district=flat['district'],
+                    micro_district=flat['micro_district'],
+                    living_condition=flat['living_condition'],
+                    planning=flat['planning']
+                )
 
                 media = types.InputMediaPhoto(media=get_image(path=flat["scheme"]),
                                                   caption=caption_text)
@@ -108,7 +123,7 @@ async def announcement_feed(message: types.Message, state: FSMContext, bot: Bot)
                                             reply_markup=inline_announcement_kb(user_data[user_id]))
         else:
             await message.answer(
-                _('Лента пуста')
+                _('Стрічка пуста')
             )
     else:
         await message.answer(
@@ -148,44 +163,59 @@ async def announcement_step(callback: types.CallbackQuery, callback_data: Announ
                     print(flat)
                     print(house)
 
-                    caption_text = f'Будинок: {house} \n' \
-                                   f'Секція: {section["name"]}\n' \
-                                   f'Поверх: {floor["name"]}\n' \
-                                   f'Корпус: {corps["name"]}\n' \
-                                   f'К-сть кімнат: {flat["room_amount"]}\n' \
-                                   f'Ціна: {flat["price"]}\n' \
-                                   f'Площа: {flat["square"]}\n' \
-                                   f'Площа кухні: {flat["kitchen_square"]}\n' \
-                                   f'Балкон: {flat["balcony"]}\n' \
-                                   f'Комісія: {flat["commission"]}\n' \
-                                   f'Вулиця: {flat["district"]}\n' \
-                                   f'Район: {flat["micro_district"]}\n' \
-                                   f'Стан: {flat["living_condition"]}\n' \
-                                   f'Планування: {flat["planning"]}\n'
+                    caption_text = _('Будинок: {house} \n'
+                                     'Секція: {section}\n'
+                                     'Поверх: {floor}\n'
+                                     'Корпус: {corps}\n'
+                                     'К-сть кімнат: {room_amount}\n'
+                                     'Ціна: {price}\n'
+                                     'Площа: {square}\n'
+                                     'Площа кухні: {kitchen_square}\n'
+                                     'Балкон: {balcony}\n'
+                                     'Комісія: {commission}\n'
+                                     'Вулиця: {district}\n'
+                                     'Район: {micro_district}\n'
+                                     'Стан: {living_condition}\n'
+                                     'Планування: {planning}\n').format(
+                        house=house,
+                        section=section['name'],
+                        floor=floor['name'],
+                        corps=corps['name'],
+                        room_amount=flat['room_amount'],
+                        price=flat['price'],
+                        square=flat['square'],
+                        kitchen_square=flat['kitchen_square'],
+                        balcony=flat['balcony'],
+                        commission=flat['commission'],
+                        district=flat['district'],
+                        micro_district=flat['micro_district'],
+                        living_condition=flat['living_condition'],
+                        planning=flat['planning']
+                    )
 
                     media = types.InputMediaPhoto(media=get_image(path=flat["scheme"]),
                                                   caption=caption_text)
                     await callback.message.edit_media(media=media,
                                                       reply_markup=inline_announcement_kb(user_data[user_id]))
-                    await callback.answer('Змінено')
+                    await callback.answer(_('Змінено'))
 
                 else:
                     await callback.answer('Check',
                         reply_markup=inline_announcement_kb(user_data[user_id]))
             except IndexError:
                 await callback.answer(
-                   'Це було останнє оголошення'
+                   _('Це було останнє оголошення')
                 )
                 user_data[user_id] -= 1
             except NegativeIndexError:
                 await callback.answer(
-                    'Це перше оголошення'
+                    _('Це перше оголошення')
                 )
                 user_data[user_id] += 1
     except KeyError:
         await callback.message.answer(
-            'Сталась помилка, перезапустіться командою\n'
-              '/start',
+            _('Сталась помилка, перезапустіться командою\n'
+              '/start'),
             reply_markup=ReplyKeyboardRemove())
     await callback.answer()
 

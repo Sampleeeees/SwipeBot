@@ -1,12 +1,11 @@
 from typing import Any
-
-import httpx
 from aiogram import Router, types, Bot, F
 from aiogram.filters import Command, Text
 from aiogram.types import ReplyKeyboardRemove
 from aiogram.fsm.context import FSMContext
 from services.api_client import UserAPIClient
 from aiogram.utils.i18n import gettext as _
+from aiogram.utils.i18n import lazy_gettext as __
 from keyboards.general.login_and_registration import login_register_kb, cancel_kb
 from keyboards.general.menu import main_kb
 from validators.check_input_email import is_valid_email
@@ -25,7 +24,7 @@ async def cmd_start(message: types.Message, state: FSMContext):
         reply_markup=login_register_kb()
     )
 
-@router.message(LoginState(), F.text == 'Відмінити')
+@router.message(LoginState(), F.text == __('Відмінити'))
 async def cmd_cancel(message: types.Message, state: FSMContext) -> Any:
     await state.set_state(LoginState.menu)
     await message.answer(
@@ -34,7 +33,7 @@ async def cmd_cancel(message: types.Message, state: FSMContext) -> Any:
         reply_markup=login_register_kb()
     )
 
-@router.message(LoginState.menu, F.text == 'Вхід')
+@router.message(LoginState.menu, F.text == __('Вхід'))
 @router.message(Command('login'))
 async def cmd_login(message: types.Message, state: FSMContext) -> None:
     await state.set_state(LoginState.email)
@@ -44,7 +43,7 @@ async def cmd_login(message: types.Message, state: FSMContext) -> None:
     )
 
 
-@router.message(LoginState.menu, F.text == 'Реєстрація')
+@router.message(LoginState.menu, F.text == __('Реєстрація'))
 @router.message(Command('register'))
 async def cmd_login(message: types.Message, state: FSMContext) -> None:
     await state.set_state(RegisterStates.email)
@@ -67,7 +66,6 @@ async def cmd_email(message: types.Message, state: FSMContext) -> None:
             await message.answer(
                 _("Тепер введіть пароль"),
                 reply_markup=cancel_kb(),
-                input_field_placeholder="Введіть пароль"
             )
         else:
             await message.answer(_('Введіть email будь-ласка '))
@@ -86,8 +84,9 @@ async def cmd_password(message: types.Message, state: FSMContext) -> None:
         print(data)
         await message.answer(_('Дякую \n'
                              'Ваші дані: \n'
-                             f'Email: {data.get("email")} \n'
-                             f'Password: {data.get("password")}'))
+                             'Email: {email} \n'
+                             'Password: {password}').format(email=data.get('email'),
+                                                            password=data.get('password')))
         await message.answer(_('Перевіряю введені дані...'), reply_markup=ReplyKeyboardRemove())
         user = UserAPIClient(user=message.from_user.id)
         response = await user.login(data)
