@@ -24,9 +24,12 @@ class Localization(I18nMiddleware):
     async def get_locale(self, event: TelegramObject, data: Dict[str, Any]) -> str:
         message_dict = event.dict()
         user_id = message_dict['from_user']['id']
-        user_language = await self.get_user_language(user_id)
+        try:
+            user_language = await self.get_user_language(user_id)
 
-        if user_language:
-            return user_language
+            if user_language:
+                return user_language
+        except TypeError:
+            return 'uk'
 
         return self.i18n.default_locale

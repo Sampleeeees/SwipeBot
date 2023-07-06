@@ -1,11 +1,12 @@
 from pymongo import MongoClient
 from .users import User
+from config.config_reader import config
 
-#client = MongoClient(f"{config.mongo_name}://{config.mongo_host}:{config.mongo_port}/{config.mongo_db}")
-#mydb = client[f'{config.mongo_db}']
+client = MongoClient(config.mongo_url)
+mydb = client[config.mongo_db]
 
-client = MongoClient("mongodb://localhost:27017/swipe_tg")
-mydb = client['swipe_tg']
+#client = MongoClient()
+#mydb = client['swipe_tg']
 
 
 
@@ -118,6 +119,8 @@ def is_authenticated(user_id: int) -> bool:
 
 def get_info_user(user_id) -> str:
     user = User.find_user(user_id=user_id)
-    return user['language']
+    if user['language']:
+        return user['language']
+    return 'uk'
 
 

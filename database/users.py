@@ -1,8 +1,10 @@
 from pymongo.errors import DuplicateKeyError
 from pymongo import MongoClient, IndexModel
 
-client = MongoClient("mongodb://localhost:27017/swipe_tg")
-mydb = client['swipe_tg']
+from config.config_reader import config
+
+client = MongoClient(config.mongo_url)
+mydb = client[config.mongo_db]
 
 mydb.users.create_indexes([
     IndexModel('user_id', unique=True)

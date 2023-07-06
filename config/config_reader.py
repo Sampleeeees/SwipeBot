@@ -7,6 +7,7 @@ class Settings(BaseSettings):
     mongo_port: str
     mongo_host: str
     mongo_db: str
+    mongo_url: str
 
     class Config:
         env_file = '.env'
