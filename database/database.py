@@ -2,11 +2,11 @@ from pymongo import MongoClient
 from .users import User
 from config.config_reader import config
 
-client = MongoClient(config.mongo_url)
-mydb = client[config.mongo_db]
+#client = MongoClient(config.mongo_url)
+#mydb = client[config.mongo_db]
 
-#client = MongoClient()
-#mydb = client['swipe_tg']
+client = MongoClient()
+mydb = client['swipe_tg']
 
 
 
@@ -24,7 +24,7 @@ def set_tokens(data: dict, user_id: int) -> None:
             token=data.get('access'),
             refresh_token=data.get('refresh'),
             is_auth=True,
-            language='uk'
+            language=user_data.get('language')
         )
         user.update()
     else:
@@ -100,6 +100,7 @@ def logout(user_id: int) -> None:
             token=user_data['token'],
             refresh_token=user_data['refresh_token'],
             is_auth=False,
+            language=user_data.get('language')
         )
         user.update()
 
@@ -119,8 +120,6 @@ def is_authenticated(user_id: int) -> bool:
 
 def get_info_user(user_id) -> str:
     user = User.find_user(user_id=user_id)
-    if user['language']:
-        return user['language']
-    return 'uk'
+    return user.get('language', 'uk')
 
 

@@ -9,6 +9,7 @@ from aiogram.fsm.context import FSMContext
 from aiogram.types import CallbackQuery, ReplyKeyboardRemove, URLInputFile, FSInputFile
 from keyboards.general.menu import main_kb
 from states.announ_edit import MyAnnouncementEditState
+from states.login_state import MenuState
 from states.profile_state import AnnouncementState, ProfileState
 from services.api_client import AnnouncementAPIClient, UserAPIClient
 from keyboards.inline.my_announcement import inline_my_announcement_kb, MyAnnouncementCallbackFactory
@@ -1209,7 +1210,7 @@ async def announcement_create_confirm(message: types.Message, state: FSMContext,
             await message.answer(_('Надішліть локацію через гео телеграму:'),
                                  reply_markup=request_location_kb())
         elif message.text == _('Відмінити'):
-            await state.clear()
+            await state.set_state(MenuState.menu)
             await bot.delete_message(chat_id=message.chat.id, message_id=message.message_id - 1)
             await message.answer(_('Ви повернулися до головного меню'),
                                  reply_markup=main_kb())

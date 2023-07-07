@@ -242,7 +242,7 @@ async def edit_register_data(message: types.Message, state: FSMContext, bot: Bot
     current_state = await state.get_state()
 
     if current_state == RegisterStates.edit:
-        if message.text == 'Зареєструватися':
+        if message.text == _('Зареєструватися'):
             data = await state.get_data()
             print('Data:', data)
             print(data.get('password1'))
@@ -292,7 +292,7 @@ async def edit_register_data(message: types.Message, state: FSMContext, bot: Bot
             await bot.delete_message(chat_id=message.chat.id, message_id=message.message_id - 1)
             await message.answer(_('Введіть новий пароль'))
         elif message.text == _('Відмінити'):
-            await state.clear()
+            await state.set_state(LoginState.menu)
             await bot.delete_message(chat_id=message.from_user.id, message_id=message.message_id - 1)
             await message.answer(_('Ви повернулися до входу'),
                                  reply_markup=login_register_kb())

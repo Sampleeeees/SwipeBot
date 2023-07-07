@@ -1,0 +1,3174 @@
+# English translations for PROJECT.
+# Copyright (C) 2023 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2023-07-07 13:06+0300\n"
+"PO-Revision-Date: 2023-07-06 18:53+0300\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: handlers/announcement_detail.py:113
+msgid "У вас немає жодного створеного оголошення"
+msgstr "You do not have any ads created"
+
+#: handlers/announcement_detail.py:141 handlers/announcement_detail.py:201
+#: handlers/announcement_detail.py:253 handlers/announcement_detail.py:307
+#: handlers/announcement_detail.py:362 handlers/announcement_detail.py:412
+#: handlers/announcement_detail.py:461 handlers/announcement_detail.py:509
+#: handlers/announcement_detail.py:560 handlers/announcement_detail.py:613
+#: handlers/announcement_detail.py:664 handlers/announcement_detail.py:710
+#: handlers/announcement_detail.py:753 handlers/announcement_detail.py:804
+#: handlers/announcement_detail.py:857 handlers/announcement_detail.py:910
+#: handlers/announcement_detail.py:966 handlers/announcement_detail.py:1014
+#: handlers/announcement_detail.py:1090 handlers/create_announcement.py:83
+#: handlers/create_announcement.py:140 handlers/create_announcement.py:199
+#: handlers/create_announcement.py:258 handlers/create_announcement.py:312
+#: handlers/create_announcement.py:365 handlers/create_announcement.py:417
+#: handlers/create_announcement.py:472 handlers/create_announcement.py:529
+#: handlers/create_announcement.py:584 handlers/create_announcement.py:634
+#: handlers/create_announcement.py:681 handlers/create_announcement.py:736
+#: handlers/create_announcement.py:792 handlers/create_announcement.py:852
+#: handlers/create_announcement.py:914 handlers/create_announcement.py:964
+#: handlers/create_announcement.py:1001
+msgid ""
+"Будинок: {house_name}\n"
+"Секція: {section_name}\n"
+"Корпус: {corps_name}\n"
+"Поверх: {floor_name}\n"
+"К-сть кімнат: {room_amount}\n"
+"Ціна: {price}\n"
+"Площа: {square}\n"
+"Площа кухні: {kitchen_square}\n"
+"Балкон: {balcony_name}\n"
+"Вулиця: {district}\n"
+"Район: {micro_district}\n"
+"Стан: {living_condition_name}\n"
+"Планування: {planning_name}\n"
+"\n"
+"Перевірте оголошення якщо все вірно натисніть кнопку <b>Створити</b>"
+msgstr ""
+"House: {house_name}\n"
+"Section: {section_name}\n"
+"Corps: {corps_name}\n"
+"Floor: {floor_name}\n"
+"Number of rooms: {room_amount}\n"
+"Price: {price}\n"
+"Square: {square}\n"
+"Kitchen square: {kitchen_square}\n"
+"Balcony: {balcony_name}\n"
+"Street: {district}\n"
+"District: {micro_district}\n"
+"Condition: {living_condition_name}\n"
+"Planning: {planning_name}\n"
+"\n"
+"Check the ad, if everything is correct, click <b>Create</b>"
+
+#: handlers/announcement_detail.py:235 handlers/create_announcement.py:117
+msgid ""
+"Оберіть значення з клавіатури. \n"
+"Або вірно перепишіть назву будинку :)"
+msgstr ""
+"Choose a value from the keyboard. \n"
+"Or correctly rewrite the name of the house :)"
+
+#: handlers/announcement_detail.py:287 handlers/create_announcement.py:174
+msgid ""
+"Оберіть будь-ласка значення з клавіатури. \n"
+"Або вірно перепишіть назву секції :)"
+msgstr ""
+"Please select a value from the keyboard. \n"
+"Or correctly rewrite the name of the section :)"
+
+#: handlers/announcement_detail.py:341
+msgid ""
+"Оберіть будь-ласка значення з клавіатури. \n"
+"Або вірно перепишіть назву корпус :)"
+msgstr ""
+"Please select a value from the keyboard. \n"
+"Or correctly rewrite the name of the body :)"
+
+#: handlers/announcement_detail.py:396 handlers/create_announcement.py:292
+msgid ""
+"Оберіть будь-ласка значення з клавіатури. \n"
+"Або вірно перепишіть назву поверху :)"
+msgstr ""
+"Please select a value from the keyboard. \n"
+"Or correctly rewrite the name of the floor :)"
+
+#: handlers/announcement_detail.py:447 handlers/create_announcement.py:347
+msgid ""
+"Введіть кількість кімнат \n"
+"Кімнат може бути від 1 до 7 та бути числом"
+msgstr ""
+"Enter number of rooms \n"
+"Room can be from 1 to 7 and be a number"
+
+#: handlers/announcement_detail.py:495 handlers/create_announcement.py:399
+msgid ""
+"Введіть ціну ще раз \n"
+"Діапазон ціни може бути від 10 000 до 100 000 000"
+msgstr ""
+"Enter price again \n"
+"The price range can be from 10,000 to 100,000,000"
+
+#: handlers/announcement_detail.py:543 handlers/create_announcement.py:451
+msgid ""
+"Введіть площу квартири повторно \n"
+"Діапазон площі від 10 до 250 м. кв."
+msgstr ""
+"Re-enter the area of the apartment \n"
+"Range of area from 10 to 250 square meters."
+
+#: handlers/announcement_detail.py:594 handlers/create_announcement.py:506
+msgid ""
+"Введіть площу кухні повторно \n"
+"Діапазон площі від 10 до 250 м. кв \n"
+"Кухня не може перевищувати від половини загальної площі"
+msgstr ""
+"Re-enter kitchen area \n"
+"Area range from 10 to 250 square meters \n"
+"The kitchen cannot exceed half of the total area"
+
+#: handlers/announcement_detail.py:647 handlers/create_announcement.py:563
+msgid ""
+"Я не розумію про що ви...\n"
+"Оберіть варіант з кнопки"
+msgstr ""
+"I don't understand what you're talking about...\n"
+"Choose an option from the button"
+
+#: handlers/announcement_detail.py:698 handlers/create_announcement.py:618
+msgid ""
+"Введіть комісію для агента \n"
+"Діапазон комісії від 10 до 30% від повної вартості квартири"
+msgstr ""
+"Enter Agent Fee \n"
+"Commission range from 10 to 30% of the total cost of the apartment"
+
+#: handlers/announcement_detail.py:793 handlers/create_announcement.py:722
+#: keyboards/general/announcement.py:56
+msgid "Чорнова"
+msgstr "Draft"
+
+#: handlers/announcement_detail.py:795 handlers/create_announcement.py:724
+#: keyboards/general/announcement.py:57
+msgid "Потрібен ремонт"
+msgstr "Repair"
+
+#: handlers/announcement_detail.py:797 handlers/create_announcement.py:726
+#: keyboards/general/announcement.py:58
+msgid "В жилому стані"
+msgstr "Good"
+
+#: handlers/announcement_detail.py:838 handlers/create_announcement.py:770
+msgid ""
+"Не відомий для мене стан квартири...\n"
+"Оберіть планування з кнопок нижче"
+msgstr ""
+"I don't know the condition of the apartment...\n"
+"Choose a schedule from the buttons below"
+
+#: handlers/announcement_detail.py:848 handlers/create_announcement.py:780
+#: keyboards/general/announcement.py:64
+msgid "Студія-санвузол"
+msgstr "Studio-bathroom"
+
+#: handlers/announcement_detail.py:850 handlers/create_announcement.py:782
+#: keyboards/general/announcement.py:65
+msgid "Студія"
+msgstr "Studio"
+
+#: handlers/announcement_detail.py:891 handlers/create_announcement.py:826
+msgid ""
+"Не відомий для мене планування...\n"
+"Оберіть планування з кнопок нижче"
+msgstr ""
+"Unknown planning for me...\n"
+"Choose a schedule from the buttons below"
+
+#: handlers/announcement_detail.py:945 handlers/create_announcement.py:887
+msgid ""
+"Надішліть фото-схему повторно \n"
+"Висота не повина перевищувати 720 px\n"
+"Ширина не повинна перевищувати 1280 px\n"
+"Максимальний розмір фото 20 mb"
+msgstr ""
+"Resubmit photo scheme \n"
+"Height must not exceed 720px\n"
+"Width must not exceed 1280px\n"
+"Maximum photo size 20 mb"
+
+#: handlers/announcement_detail.py:1000 handlers/create_announcement.py:949
+msgid ""
+"Надішліть фото повторно \n"
+"Висота не повина перевищувати 720 px\n"
+"Ширина не повинна перевищувати 1280 px\n"
+"Максимальний розмір фото 20 mb"
+msgstr ""
+"Resubmit photo \n"
+"Height must not exceed 720px\n"
+"Width must not exceed 1280px\n"
+"Maximum photo size 20 mb"
+
+#: handlers/announcement_detail.py:1054 handlers/create_announcement.py:1041
+#: keyboards/general/announcement.py:95
+msgid "Створити"
+msgstr "Create"
+
+#: handlers/announcement_detail.py:1057
+msgid ""
+"Чудово. \n"
+"Оновлюю квартиру в системі..."
+msgstr ""
+"Great. \n"
+"I am updating the apartment in the system..."
+
+#: handlers/announcement_detail.py:1120
+msgid "оголошення було оновлено"
+msgstr "announcement was updated"
+
+#: handlers/announcement_detail.py:1122 handlers/create_announcement.py:1094
+msgid "Сталась помилка спробуйте ще раз"
+msgstr "An error occurred, please try again"
+
+#: handlers/announcement_detail.py:1124 handlers/create_announcement.py:1096
+#: keyboards/general/announcement.py:77
+msgid "Редагувати будинок"
+msgstr "Edit house"
+
+#: handlers/announcement_detail.py:1127 handlers/create_announcement.py:1099
+msgid "Оберіть будинок: "
+msgstr "Choose house: "
+
+#: handlers/announcement_detail.py:1129 handlers/create_announcement.py:1101
+#: keyboards/general/announcement.py:78
+msgid "Редагувати секцію"
+msgstr "Edit section"
+
+#: handlers/announcement_detail.py:1133 handlers/create_announcement.py:1105
+msgid "Оберіть секцію: "
+msgstr "Choose section: "
+
+#: handlers/announcement_detail.py:1135 handlers/create_announcement.py:1107
+#: keyboards/general/announcement.py:79
+msgid "Редагувати корпус"
+msgstr "Edit corps"
+
+#: handlers/announcement_detail.py:1139 handlers/create_announcement.py:1111
+msgid "Оберіть корпус: "
+msgstr "Choose corps: "
+
+#: handlers/announcement_detail.py:1141 handlers/create_announcement.py:1113
+#: keyboards/general/announcement.py:80
+msgid "Редагувати поверх"
+msgstr "Edit floor"
+
+#: handlers/announcement_detail.py:1145 handlers/create_announcement.py:1117
+#, fuzzy
+msgid "Оберіть поверх: "
+msgstr "Choose floor:"
+
+#: handlers/announcement_detail.py:1147 handlers/create_announcement.py:1119
+#: keyboards/general/announcement.py:81
+msgid "Редагувати к-сть кімнат"
+msgstr "Edit count count"
+
+#: handlers/announcement_detail.py:1150 handlers/create_announcement.py:1122
+msgid "Введіть кількість кімнат: "
+msgstr "Enter room count"
+
+#: handlers/announcement_detail.py:1152 handlers/create_announcement.py:1124
+#: keyboards/general/announcement.py:82
+msgid "Редагувати ціну"
+msgstr "Edit price"
+
+#: handlers/announcement_detail.py:1155 handlers/create_announcement.py:1127
+msgid "Введіть ціну:"
+msgstr "Enter price"
+
+#: handlers/announcement_detail.py:1157 handlers/create_announcement.py:1129
+#: keyboards/general/announcement.py:83
+msgid "Редагувати площу"
+msgstr "Edit area"
+
+#: handlers/announcement_detail.py:1160 handlers/create_announcement.py:1132
+msgid "Введіть площу:"
+msgstr "Enter area"
+
+#: handlers/announcement_detail.py:1162 handlers/create_announcement.py:1134
+#: keyboards/general/announcement.py:84
+msgid "Редагувати площу кухні"
+msgstr "Edit kitchen area"
+
+#: handlers/announcement_detail.py:1165 handlers/create_announcement.py:412
+#: handlers/create_announcement.py:1137
+msgid "Введіть площу кухні:"
+msgstr "Enter kitchen area"
+
+#: handlers/announcement_detail.py:1167 handlers/create_announcement.py:1139
+#: keyboards/general/announcement.py:85
+msgid "Редагувати балкон"
+msgstr "Edit balcony"
+
+#: handlers/announcement_detail.py:1170 handlers/create_announcement.py:1142
+msgid "Чи є у вас балкон:"
+msgstr "Have you balcony:"
+
+#: handlers/announcement_detail.py:1172 handlers/create_announcement.py:1144
+#: keyboards/general/announcement.py:86
+msgid "Редагувати комісію"
+msgstr "Edit commission"
+
+#: handlers/announcement_detail.py:1175 handlers/create_announcement.py:1147
+msgid "Введіть комісію:"
+msgstr "Enter commission"
+
+#: handlers/announcement_detail.py:1177 handlers/create_announcement.py:1149
+#: keyboards/general/announcement.py:87
+msgid "Редагувати вулицю"
+msgstr "Edit district"
+
+#: handlers/announcement_detail.py:1180 handlers/create_announcement.py:1152
+msgid "Введіть вулицю:"
+msgstr "Enter district"
+
+#: handlers/announcement_detail.py:1182 handlers/create_announcement.py:1154
+#: keyboards/general/announcement.py:88
+msgid "Редагувати район"
+msgstr "Edit micro district"
+
+#: handlers/announcement_detail.py:1185 handlers/create_announcement.py:629
+#: handlers/create_announcement.py:1157
+msgid "Введіть район:"
+msgstr "Enter micro district"
+
+#: handlers/announcement_detail.py:1187 handlers/create_announcement.py:1159
+#: keyboards/general/announcement.py:89
+msgid "Редагувати стан"
+msgstr "Edit condition"
+
+#: handlers/announcement_detail.py:1190 handlers/create_announcement.py:676
+#: handlers/create_announcement.py:1162
+msgid "Оберіть стан:"
+msgstr "Choose condition:"
+
+#: handlers/announcement_detail.py:1192 handlers/create_announcement.py:1164
+#: keyboards/general/announcement.py:90
+msgid "Редагувати планування"
+msgstr "Edit planning"
+
+#: handlers/announcement_detail.py:1195 handlers/create_announcement.py:1167
+msgid "Оберіть планування:"
+msgstr "Choose planning"
+
+#: handlers/announcement_detail.py:1197 handlers/create_announcement.py:1169
+#: keyboards/general/announcement.py:91
+msgid "Редагувати схему"
+msgstr "Edit scheme"
+
+#: handlers/announcement_detail.py:1200 handlers/create_announcement.py:1172
+msgid "Відправте схему як фото:"
+msgstr "Send scheme as photo"
+
+#: handlers/announcement_detail.py:1202 handlers/create_announcement.py:1174
+#: keyboards/general/announcement.py:92
+msgid "Редагувати фото"
+msgstr "Edit photo"
+
+#: handlers/announcement_detail.py:1205 handlers/create_announcement.py:1177
+msgid "Надішліть фото квартири:"
+msgstr "Send photo flat"
+
+#: handlers/announcement_detail.py:1207 handlers/create_announcement.py:1179
+#: keyboards/general/announcement.py:93
+msgid "Редагувати локацію"
+msgstr "Edit geolocation"
+
+#: handlers/announcement_detail.py:1210 handlers/create_announcement.py:1182
+msgid "Надішліть локацію через гео телеграму:"
+msgstr "Send location via geo telegram:"
+
+#: handlers/announcement_detail.py:1212 handlers/create_announcement.py:1184
+#: handlers/register.py:294 keyboards/general/announcement.py:94
+#: keyboards/general/login_and_registration.py:21
+#: keyboards/general/login_and_registration.py:30
+#: keyboards/general/profile.py:8
+msgid "Відмінити"
+msgstr "Cancel"
+
+#: handlers/announcement_detail.py:1215
+msgid "Ви повернулися до головного меню"
+msgstr "You are returned to the main menu"
+
+#: handlers/announcement_detail.py:1218 handlers/create_announcement.py:1190
+msgid "Оберіть дію з клавіатури"
+msgstr "Choose an action from the keyboard"
+
+#: handlers/create_announcement.py:47
+msgid "Ви перейшли до створення оголошення"
+msgstr "You have proceeded to create an ad"
+
+#: handlers/create_announcement.py:49
+msgid "Оберіть будинок в списку нижче:"
+msgstr "Choose a house from the list below:"
+
+#: handlers/create_announcement.py:67
+msgid "Тепер оберіть секцію будинку"
+msgstr "Now choose section for house"
+
+#: handlers/create_announcement.py:70
+msgid ""
+"Оберіть будь-ласка значення з клавіатури. \n"
+"Або вірно перепишіть назву будинку :)"
+msgstr ""
+"Please select a value from the keyboard. \n"
+"Or correctly rewrite the name of the house :)"
+
+#: handlers/create_announcement.py:134
+msgid "Оберіть корпус"
+msgstr "Choose corps"
+
+#: handlers/create_announcement.py:193
+msgid "Оберіть поверх"
+msgstr "Choose floor"
+
+#: handlers/create_announcement.py:233
+msgid ""
+"Оберіть будь-ласка значення з клавіатури. \n"
+"Або вірно перепишіть назву корпусу :)"
+msgstr ""
+"Please select a value from the keyboard. \n"
+"Or correctly rewrite the name of the case :)"
+
+#: handlers/create_announcement.py:252
+msgid "Введіть кількість кімнат:"
+msgstr "Enter count room"
+
+#: handlers/create_announcement.py:307
+msgid "Введіть ціну квартири: "
+msgstr "Enter price for flat"
+
+#: handlers/create_announcement.py:360
+msgid "Введіть загальну площу квартири:"
+msgstr "Enter total area for flat:"
+
+#: handlers/create_announcement.py:467
+msgid "У вас є балкон:"
+msgstr "Have are you balcony:"
+
+#: handlers/create_announcement.py:517 keyboards/general/announcement.py:49
+msgid "Так"
+msgstr "Yes"
+
+#: handlers/create_announcement.py:519 keyboards/general/announcement.py:50
+msgid "Ні"
+msgstr "No"
+
+#: handlers/create_announcement.py:524
+msgid "Введіть комісію агенту:"
+msgstr "Enter commission for agent"
+
+#: handlers/create_announcement.py:579
+msgid "Введіть вулицю: "
+msgstr "Enter district"
+
+#: handlers/create_announcement.py:731
+msgid "Тепер оберіть планування квартири"
+msgstr "Now choose the layout of the apartment"
+
+#: handlers/create_announcement.py:847
+msgid "А тепер додайте зображення квартири:"
+msgstr "Now add an image of the apartment:"
+
+#: handlers/create_announcement.py:908
+msgid "А тепер передайте геолокацію за допомогою телеграму:"
+msgstr "Now send your geolocation via Telegram:"
+
+#: handlers/create_announcement.py:1044
+msgid ""
+"Чудово. \n"
+"Створюю квартиру в системі..."
+msgstr ""
+"Great. \n"
+"I am creating an apartment in the system..."
+
+#: handlers/create_announcement.py:1077
+msgid ""
+"Будинок: {house_name}\n"
+"Секція: {section_name}\n"
+"Корпус: {corps_name}\n"
+"Поверх: {floor_name}\n"
+"К-сть кімнат: {room_amount}\n"
+"Ціна: {price}\n"
+"Площа: {square}\n"
+"Площа кухні: {kitchen_square}\n"
+"Балкон: {balcony_name}\n"
+"Вулиця: {district}\n"
+"Район: {micro_district}\n"
+"Стан: {living_condition_name}\n"
+"Планування: {planning_name}\n"
+"\n"
+msgstr ""
+"House: {house_name}\n"
+"Section: {section_name}\n"
+"Corps: {corps_name}\n"
+"Floor: {floor_name}\n"
+"Number of rooms: {room_amount}\n"
+"Price: {price}\n"
+"Square: {square}\n"
+"Kitchen square: {kitchen_square}\n"
+"Balcony: {balcony_name}\n"
+"Street: {district}\n"
+"District: {micro_district}\n"
+"Condition: {living_condition_name}\n"
+"Planning: {planning_name}\n"
+"\n"
+
+#: handlers/create_announcement.py:1092
+msgid "оголошення було створено"
+msgstr "announcement was crated"
+
+#: handlers/create_announcement.py:1187
+msgid "Ви повернулися до профілю"
+msgstr "You have returned to your profile"
+
+#: handlers/language.py:22
+msgid "Оберіть мову"
+msgstr "Choose language"
+
+#: handlers/language.py:37
+#, fuzzy
+msgid "Оберіть мову з клавіатури нижче"
+msgstr "Choose an action from the keyboard"
+
+#: handlers/list_announcement.py:66
+msgid "Вітаю в списку оголошень"
+msgstr "Hello in tape announcement"
+
+#: handlers/list_announcement.py:90 handlers/list_announcement.py:167
+msgid ""
+"Будинок: {house} \n"
+"Секція: {section}\n"
+"Поверх: {floor}\n"
+"Корпус: {corps}\n"
+"К-сть кімнат: {room_amount}\n"
+"Ціна: {price}\n"
+"Площа: {square}\n"
+"Площа кухні: {kitchen_square}\n"
+"Балкон: {balcony}\n"
+"Комісія: {commission}\n"
+"Вулиця: {district}\n"
+"Район: {micro_district}\n"
+"Стан: {living_condition}\n"
+"Планування: {planning}\n"
+msgstr ""
+"House: {house} \n"
+"Section: {section}\n"
+"Floor: {floor}\n"
+"Corps: {corps}\n"
+"Number of rooms: {room_amount}\n"
+"Price: {price}\n"
+"Square: {square}\n"
+"Kitchen square: {kitchen_square}\n"
+"Balcony: {balcony}\n"
+"Commission: {commission}\n"
+"Street: {district}\n"
+"District: {micro_district}\n"
+"Condition: {living_condition}\n"
+"Planning: {planning}\n"
+
+#: handlers/list_announcement.py:127
+msgid "Стрічка пуста"
+msgstr "The tape is empty"
+
+#: handlers/list_announcement.py:131
+msgid "Увійдіть або зареєструйтесь"
+msgstr "Log in or register"
+
+#: handlers/list_announcement.py:201
+msgid "Змінено"
+msgstr "Changed"
+
+#: handlers/list_announcement.py:208
+msgid "Це було останнє оголошення"
+msgstr "It was the last announcement"
+
+#: handlers/list_announcement.py:213
+msgid "Це перше оголошення"
+msgstr "It is first announcement"
+
+#: handlers/list_announcement.py:218
+msgid ""
+"Сталась помилка, перезапустіться командою\n"
+"/start"
+msgstr ""
+"An error occurred, restart with command\n"
+"/start"
+
+#: handlers/profile.py:23
+msgid "Привіт {user} ти перейшов в меню профілю"
+msgstr "Hello {user}, you have gone to the profile menu"
+
+#: handlers/profile.py:47
+msgid ""
+"Telegram: <b>@{username}</b> \n"
+"Ім'я та прізвище: <b>{name} {surname}</b>\n"
+"Пошта: <b>{email}</b>\n"
+"Номер телефону: <b>{phone_number}</b> \n"
+"Роль: <b>{role}</b>"
+msgstr ""
+"Telegram: <b>@{username}</b> \n"
+"First and last name: <b>{name} {surname}</b>\n"
+"Mail: <b>{email}</b>\n"
+"Phone number: <b>{phone_number}</b> \n"
+"Role: <b>{role}</b>"
+
+#: handlers/profile.py:62
+msgid "Будь-ласка увійдіть в профіль або зареєструйтесь"
+msgstr "Please login or register"
+
+#: handlers/profile.py:71
+msgid "Ви перейшли до головного меню"
+msgstr "You have reached the main menu"
+
+#: handlers/profile.py:77
+msgid "Ви перейшли до меню профілю"
+msgstr "You have gone to the profile menu"
+
+#: handlers/register.py:20 handlers/start.py:22 handlers/start.py:31
+msgid ""
+"Вітаю в системі Swipe \n"
+"Увійдіть або зареєструйтесь"
+msgstr ""
+"Welcome to Swipe \n"
+"Log in or register"
+
+#: handlers/register.py:37
+msgid "Тепер введіть ваше ім'я"
+msgstr "New enter your name"
+
+#: handlers/register.py:40 handlers/register.py:63
+msgid "Ви ввели невірний email. Повторіть спробу"
+msgstr "You have entered an incorrect email. Try again"
+
+#: handlers/register.py:47 handlers/register.py:90 handlers/register.py:133
+#: handlers/register.py:197 handlers/register.py:221
+msgid ""
+"Дякую. Ваші дані: \n"
+"Пошта: {email} \n"
+"Ім'я: {name} \n"
+"Прізвище: {surname} \n"
+"Пароль 1: {password1} \n"
+"Пароль 2: {password2} \n"
+" \n"
+"Якщо все вірно натисніть кнопку <b>Зареєструватися</b> \n"
+"Інакше оберіть що відредагувати"
+msgstr ""
+"Thank you. Your details: \n"
+"Mail: {email} \n"
+"Name: {name} \n"
+"Surname: {surname} \n"
+"Password 1: {password1} \n"
+"Password 2: {password2} \n"
+"\n"
+"If everything is correct, click the button <b>Register</b> \n"
+"Otherwise choose what to edit"
+
+#: handlers/register.py:78
+msgid "Тепер введіть прізвище"
+msgstr "New enter surname"
+
+#: handlers/register.py:81 handlers/register.py:106
+msgid ""
+"Ім'я повинно починатися з великої літери та мати не менше ніж 2 символи "
+"та складатися тільки з букв.\n"
+"Введіть ваше ім'я"
+msgstr ""
+"The name must start with a capital letter and have at least 2 "
+"charactersand consist only of letters.\n"
+"Enter your name"
+
+#: handlers/register.py:121
+msgid "Дякую. Тепер потрібно ввести пароль"
+msgstr "Thank you. Now repeat password"
+
+#: handlers/register.py:124 handlers/register.py:149
+msgid ""
+"Прізвище повинно починатися з великої літери та мати не менше ніж 2 "
+"символи та складатися тільки з букв.\n"
+"Введіть ваше прізвище"
+msgstr ""
+"The last name must start with a capital letter and have at least 2 "
+"characters and consist only of letters.\n"
+"Enter your last name"
+
+#: handlers/register.py:165 handlers/register.py:176
+msgid "Повторіть пароль"
+msgstr "Repeat password"
+
+#: handlers/register.py:168 handlers/register.py:179
+msgid ""
+"Пароль повинне бути не менше ніж з 8 символів та містити букви та цифри."
+" \n"
+"Введіть пароль ще раз"
+msgstr ""
+"Password must be at least 8 characters long and contain letters and "
+"numbers.\n"
+"Re-enter password"
+
+#: handlers/register.py:213 handlers/register.py:237
+msgid ""
+"Ваш пароль не співпадає з минулим.\n"
+"Введіть пароль повторно"
+msgstr ""
+"Your password does not match the previous one.\n"
+"Re-enter password"
+
+#: handlers/register.py:245 keyboards/general/login_and_registration.py:31
+msgid "Зареєструватися"
+msgstr "Registration"
+
+#: handlers/register.py:251
+msgid ""
+"Дякую. Ваші дані: \n"
+"Пошта: {email} \n"
+"Ім'Я: {name} \n"
+"Прізвище: {surname} \n"
+"Пароль1: {password1} \n"
+"Пароль2: {password2}"
+msgstr ""
+"Thank you. Your details: \n"
+"Mail: {email} \n"
+"Name: {name} \n"
+"Surname: {surname} \n"
+"Password1: {password1} \n"
+"Password2: {password2}"
+
+#: handlers/register.py:262
+msgid "Реєструю вас в системі..."
+msgstr "Register your in system..."
+
+#: handlers/register.py:266
+msgid ""
+"Вітаю. Ви зареєстровані.\n"
+"Ваші дані для входу: \n"
+"Email: {email} \n"
+"Password: {password2}\n"
+" \n"
+"<b>Підтвердіть вашу пошту </b>, щоб мати можливість користуватися ботом \n"
+" \n"
+"Якщо ви підтвердили пошту тоді можете авторизуватися (/login)"
+msgstr ""
+"Congratulations. You are registered.\n"
+"Your login details: \n"
+"Email: {email} \n"
+"Password: {password2}\n"
+"\n"
+"<b>Confirm your email </b> to be able to use the bot \n"
+"\n"
+"If you have confirmed your mail, then you can log in (/login)"
+
+#: handlers/register.py:276
+msgid ""
+"Упс... Схоже ви вже зареєстровані в системі.\n"
+"Спробуй увійти в акаунт (/login) "
+msgstr ""
+"Oops... Looks like you're already logged in.\n"
+"Try to enter the account (/login) "
+
+#: handlers/register.py:278 keyboards/general/login_and_registration.py:26
+msgid "Редагувати email"
+msgstr "Edit email"
+
+#: handlers/register.py:281
+msgid "Введіть новий email"
+msgstr "Enter new email"
+
+#: handlers/register.py:282 keyboards/general/login_and_registration.py:27
+msgid "Редагувати ім'я"
+msgstr "Edit name"
+
+#: handlers/register.py:285
+msgid "Введіть нове ім'я"
+msgstr "Enter new name"
+
+#: handlers/register.py:286 keyboards/general/login_and_registration.py:28
+msgid "Редагувати прізвище"
+msgstr "Edit surname"
+
+#: handlers/register.py:289
+msgid "Введіть нове прізвище"
+msgstr "Enter new surname"
+
+#: handlers/register.py:290 keyboards/general/login_and_registration.py:29
+msgid "Редагувати пароль"
+msgstr "Edit password"
+
+#: handlers/register.py:293
+msgid "Введіть новий пароль"
+msgstr "Enter new password"
+
+#: handlers/register.py:297
+msgid "Ви повернулися до входу"
+msgstr "You're back at the entrance"
+
+#: handlers/register.py:300
+msgid "Оберіть варіант з клавіатури"
+msgstr "Choose an option from the keyboard"
+
+#: handlers/start.py:41 handlers/start.py:51
+msgid "Уведіть ваш email"
+msgstr "Enter yur email"
+
+#: handlers/start.py:67
+msgid "Тепер введіть пароль"
+msgstr "Now enter password"
+
+#: handlers/start.py:71
+msgid "Введіть email будь-ласка "
+msgstr "Enter email please"
+
+#: handlers/start.py:85
+msgid ""
+"Дякую \n"
+"Ваші дані: \n"
+"Email: {email} \n"
+"Password: {password}"
+msgstr ""
+"Thank you \n"
+"Your data: \n"
+"Email: {email} \n"
+"Password: {password}"
+
+#: handlers/start.py:90
+msgid "Перевіряю введені дані..."
+msgstr "Checking the entered data..."
+
+#: handlers/start.py:97
+msgid "Вхід виконано"
+msgstr "Log in success"
+
+#: handlers/start.py:104
+msgid ""
+"Помилка входу. Спробуйте увійти заново вказавші вірні дані.\n"
+"Якщо не маєте аккаунту то зареєструйтесь (/register)"
+msgstr ""
+"Error log in. try log in again with correctly data.\n"
+"If do not have account then (/register)"
+
+#: handlers/start.py:111
+msgid "Оберіть дію"
+msgstr "Choose event"
+
+#: keyboards/general/announcement.py:71
+msgid "Надіслати геолокацію"
+msgstr "Send geolocation"
+
+#: keyboards/general/login_and_registration.py:7
+#: keyboards/general/login_and_registration.py:14
+msgid "Вхід"
+msgstr "Login"
+
+#: keyboards/general/login_and_registration.py:8
+msgid "Реєстрація"
+msgstr "Register"
+
+#: keyboards/general/menu.py:7
+msgid "Оголошення"
+msgstr "Announcement"
+
+#: keyboards/general/menu.py:8
+msgid "Створити оголошення"
+msgstr "Create announcement"
+
+#: keyboards/general/menu.py:9
+msgid "Профіль"
+msgstr "Profile"
+
+#: keyboards/general/menu.py:10
+msgid "Мова"
+msgstr "Language"
+
+#: keyboards/general/menu.py:17 keyboards/general/profile.py:14
+msgid "Головне меню"
+msgstr "Main menu"
+
+#: keyboards/general/profile.py:6
+msgid "Мій профіль"
+msgstr "My profile"
+
+#: keyboards/general/profile.py:7
+msgid "Мої оголошення"
+msgstr "My announcement"
+
+#: keyboards/general/profile.py:15
+msgid "Меню профілю"
+msgstr "Menu profile"
+
+#: keyboards/inline/announcement.py:13
+msgid "Минуле"
+msgstr "Previous"
+
+#: keyboards/inline/announcement.py:14
+msgid "Наступне"
+msgstr "Next"
+
+#: keyboards/inline/announcement.py:15 keyboards/inline/my_announcement.py:12
+msgid "Показати геолокацію"
+msgstr "Show geolocation"
+
+#: keyboards/inline/my_announcement.py:11
+msgid "Редагувати"
+msgstr "Edit"
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/actions.py:54
+#, python-format
+msgid "Successfully deleted %(count)d %(items)s."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/actions.py:64
+#: venv/lib/python3.8/site-packages/django/contrib/admin/options.py:2149
+#, python-format
+msgid "Cannot delete %(name)s"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/actions.py:66
+#: venv/lib/python3.8/site-packages/django/contrib/admin/options.py:2151
+msgid "Are you sure?"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/apps.py:13
+msgid "Administration"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/filters.py:118
+#: venv/lib/python3.8/site-packages/django/contrib/admin/filters.py:233
+#: venv/lib/python3.8/site-packages/django/contrib/admin/filters.py:278
+#: venv/lib/python3.8/site-packages/django/contrib/admin/filters.py:321
+#: venv/lib/python3.8/site-packages/django/contrib/admin/filters.py:463
+#: venv/lib/python3.8/site-packages/django/contrib/admin/filters.py:540
+msgid "All"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/filters.py:279
+#: venv/lib/python3.8/site-packages/django/forms/widgets.py:795
+msgid "Yes"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/filters.py:280
+#: venv/lib/python3.8/site-packages/django/forms/widgets.py:796
+msgid "No"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/filters.py:295
+#: venv/lib/python3.8/site-packages/django/forms/widgets.py:794
+msgid "Unknown"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/filters.py:375
+msgid "Any date"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/filters.py:377
+msgid "Today"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/filters.py:384
+msgid "Past 7 days"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/filters.py:391
+msgid "This month"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/filters.py:398
+msgid "This year"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/filters.py:408
+msgid "No date"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/filters.py:409
+msgid "Has date"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/filters.py:541
+msgid "Empty"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/filters.py:542
+msgid "Not empty"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/forms.py:13
+#, python-format
+msgid ""
+"Please enter the correct %(username)s and password for a staff account. "
+"Note that both fields may be case-sensitive."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/helpers.py:30
+msgid "Action:"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/helpers.py:431
+#, python-format
+msgid "Add another %(verbose_name)s"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/helpers.py:435
+msgid "Remove"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/models.py:18
+msgid "Addition"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/models.py:19
+#: venv/lib/python3.8/site-packages/django/forms/widgets.py:465
+msgid "Change"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/models.py:20
+msgid "Deletion"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/models.py:50
+msgid "action time"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/models.py:57
+#: venv/lib/python3.8/site-packages/django/contrib/auth/models.py:381
+msgid "user"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/models.py:62
+#: venv/lib/python3.8/site-packages/django/contrib/auth/models.py:66
+#: venv/lib/python3.8/site-packages/django/contrib/contenttypes/models.py:145
+msgid "content type"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/models.py:66
+msgid "object id"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/models.py:69
+msgid "object repr"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/models.py:71
+msgid "action flag"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/models.py:74
+msgid "change message"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/models.py:79
+msgid "log entry"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/models.py:80
+msgid "log entries"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/models.py:89
+#, python-format
+msgid "Added “%(object)s”."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/models.py:91
+#, python-format
+msgid "Changed “%(object)s” — %(changes)s"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/models.py:96
+#, python-format
+msgid "Deleted “%(object)s.”"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/models.py:98
+msgid "LogEntry Object"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/models.py:123
+msgid "addedname"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/models.py:127
+msgid "Added {name} “{object}”."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/models.py:132
+msgid "Added."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/models.py:140
+#: venv/lib/python3.8/site-packages/django/contrib/admin/options.py:2405
+#: venv/lib/python3.8/site-packages/django/db/models/base.py:1423
+#: venv/lib/python3.8/site-packages/django/forms/models.py:893
+msgid "and"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/models.py:143
+msgid "changedname"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/models.py:147
+msgid "Changed {fields} for {name} “{object}”."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/models.py:153
+msgid "Changed {fields}."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/models.py:159
+msgid "deletedname"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/models.py:163
+msgid "Deleted {name} “{object}”."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/models.py:169
+msgid "No fields changed."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/options.py:232
+#: venv/lib/python3.8/site-packages/django/contrib/admin/options.py:273
+msgid "None"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/options.py:324
+msgid "Hold down “Control”, or “Command” on a Mac, to select more than one."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/options.py:1377
+#: venv/lib/python3.8/site-packages/django/contrib/admin/options.py:1406
+msgid "The {name} “{obj}” was added successfully."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/options.py:1379
+msgid "You may edit it again below."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/options.py:1391
+msgid ""
+"The {name} “{obj}” was added successfully. You may add another {name} "
+"below."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/options.py:1453
+msgid "The {name} “{obj}” was changed successfully. You may edit it again below."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/options.py:1468
+msgid "The {name} “{obj}” was added successfully. You may edit it again below."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/options.py:1487
+msgid ""
+"The {name} “{obj}” was changed successfully. You may add another {name} "
+"below."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/options.py:1505
+msgid "The {name} “{obj}” was changed successfully."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/options.py:1582
+#: venv/lib/python3.8/site-packages/django/contrib/admin/options.py:1967
+msgid ""
+"Items must be selected in order to perform actions on them. No items have"
+" been changed."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/options.py:1603
+msgid "No action selected."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/options.py:1634
+#, python-format
+msgid "The %(name)s “%(obj)s” was deleted successfully."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/options.py:1736
+#, python-format
+msgid "%(name)s with ID “%(key)s” doesn’t exist. Perhaps it was deleted?"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/options.py:1847
+#, python-format
+msgid "Add %s"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/options.py:1849
+#, python-format
+msgid "Change %s"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/options.py:1851
+#, python-format
+msgid "View %s"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/options.py:1938
+msgid "Database error"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/options.py:2027
+#, python-format
+msgid "%(count)s %(name)s was changed successfully."
+msgid_plural "%(count)s %(name)s were changed successfully."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/options.py:2058
+#, python-format
+msgid "%(total_count)s selected"
+msgid_plural "All %(total_count)s selected"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/options.py:2065
+#, python-format
+msgid "0 of %(cnt)s selected"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/options.py:2207
+#, python-format
+msgid "Change history: %s"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/options.py:2399
+#, python-format
+msgid "%(class_name)s %(instance)s"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/options.py:2407
+#, python-format
+msgid ""
+"Deleting %(class_name)s %(instance)s would require deleting the following"
+" protected related objects: %(related_objects)s"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/sites.py:423
+#: venv/lib/python3.8/site-packages/django/contrib/admin/tests.py:143
+msgid "Log in"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/sites.py:576
+#, python-format
+msgid "%(app)s administration"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/widgets.py:98
+msgid "Date:"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/widgets.py:99
+msgid "Time:"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/widgets.py:163
+msgid "Lookup"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/widgets.py:383
+msgid "Currently:"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/widgets.py:384
+msgid "Change:"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/templatetags/admin_list.py:433
+msgid "All dates"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/views/main.py:125
+#, python-format
+msgid "Select %s"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/views/main.py:127
+#, python-format
+msgid "Select %s to change"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admin/views/main.py:129
+#, python-format
+msgid "Select %s to view"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admindocs/apps.py:7
+msgid "Administrative Documentation"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admindocs/views.py:82
+#: venv/lib/python3.8/site-packages/django/contrib/admindocs/views.py:84
+#: venv/lib/python3.8/site-packages/django/contrib/admindocs/views.py:87
+msgid "tag:"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admindocs/views.py:119
+#: venv/lib/python3.8/site-packages/django/contrib/admindocs/views.py:122
+#: venv/lib/python3.8/site-packages/django/contrib/admindocs/views.py:126
+msgid "filter:"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admindocs/views.py:190
+#: venv/lib/python3.8/site-packages/django/contrib/admindocs/views.py:191
+#: venv/lib/python3.8/site-packages/django/contrib/admindocs/views.py:193
+msgid "view:"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admindocs/views.py:222
+#, python-format
+msgid "App %(app_label)r not found"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admindocs/views.py:227
+#, python-format
+msgid "Model %(model_name)r not found in app %(app_label)r"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admindocs/views.py:233
+#: venv/lib/python3.8/site-packages/django/contrib/admindocs/views.py:234
+#: venv/lib/python3.8/site-packages/django/contrib/admindocs/views.py:253
+#: venv/lib/python3.8/site-packages/django/contrib/admindocs/views.py:280
+#: venv/lib/python3.8/site-packages/django/contrib/admindocs/views.py:291
+#: venv/lib/python3.8/site-packages/django/contrib/admindocs/views.py:311
+#: venv/lib/python3.8/site-packages/django/contrib/admindocs/views.py:368
+#: venv/lib/python3.8/site-packages/django/contrib/admindocs/views.py:379
+msgid "model:"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admindocs/views.py:246
+#, python-format
+msgid "the related `%(app_label)s.%(data_type)s` object"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admindocs/views.py:271
+#: venv/lib/python3.8/site-packages/django/contrib/admindocs/views.py:358
+#, python-format
+msgid "related `%(app_label)s.%(object_name)s` objects"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admindocs/views.py:280
+#: venv/lib/python3.8/site-packages/django/contrib/admindocs/views.py:368
+#, python-format
+msgid "all %s"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admindocs/views.py:289
+#: venv/lib/python3.8/site-packages/django/contrib/admindocs/views.py:377
+#, python-format
+msgid "number of %s"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/admindocs/views.py:482
+#, python-format
+msgid "%s does not appear to be a urlpattern object"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/admin.py:49
+msgid "Personal info"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/admin.py:51
+msgid "Permissions"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/admin.py:62
+msgid "Important dates"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/admin.py:156
+#, python-format
+msgid "%(name)s object with primary key %(key)r does not exist."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/admin.py:168
+msgid "Password changed successfully."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/admin.py:189
+#, python-format
+msgid "Change password: %s"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/apps.py:16
+msgid "Authentication and Authorization"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/base_user.py:58
+msgid "password"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/base_user.py:59
+msgid "last login"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/forms.py:41
+msgid "No password set."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/forms.py:48
+msgid "Invalid password format or unknown hashing algorithm."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/forms.py:91
+#: venv/lib/python3.8/site-packages/django/contrib/auth/forms.py:385
+#: venv/lib/python3.8/site-packages/django/contrib/auth/forms.py:463
+msgid "The two password fields didn’t match."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/forms.py:94
+#: venv/lib/python3.8/site-packages/django/contrib/auth/forms.py:172
+#: venv/lib/python3.8/site-packages/django/contrib/auth/forms.py:207
+#: venv/lib/python3.8/site-packages/django/contrib/auth/forms.py:467
+msgid "Password"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/forms.py:100
+msgid "Password confirmation"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/forms.py:103
+#: venv/lib/python3.8/site-packages/django/contrib/auth/forms.py:478
+msgid "Enter the same password as before, for verification."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/forms.py:173
+msgid ""
+"Raw passwords are not stored, so there is no way to see this user’s "
+"password, but you can change the password using <a href=\"{}\">this "
+"form</a>."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/forms.py:213
+#, python-format
+msgid ""
+"Please enter a correct %(username)s and password. Note that both fields "
+"may be case-sensitive."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/forms.py:217
+msgid "This account is inactive."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/forms.py:282
+msgid "Email"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/forms.py:388
+msgid "New password"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/forms.py:394
+msgid "New password confirmation"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/forms.py:430
+msgid "Your old password was entered incorrectly. Please enter it again."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/forms.py:435
+msgid "Old password"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/forms.py:475
+msgid "Password (again)"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/hashers.py:327
+#: venv/lib/python3.8/site-packages/django/contrib/auth/hashers.py:420
+#: venv/lib/python3.8/site-packages/django/contrib/auth/hashers.py:510
+#: venv/lib/python3.8/site-packages/django/contrib/auth/hashers.py:605
+#: venv/lib/python3.8/site-packages/django/contrib/auth/hashers.py:665
+#: venv/lib/python3.8/site-packages/django/contrib/auth/hashers.py:707
+#: venv/lib/python3.8/site-packages/django/contrib/auth/hashers.py:765
+#: venv/lib/python3.8/site-packages/django/contrib/auth/hashers.py:820
+#: venv/lib/python3.8/site-packages/django/contrib/auth/hashers.py:878
+msgid "algorithm"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/hashers.py:328
+msgid "iterations"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/hashers.py:329
+#: venv/lib/python3.8/site-packages/django/contrib/auth/hashers.py:426
+#: venv/lib/python3.8/site-packages/django/contrib/auth/hashers.py:512
+#: venv/lib/python3.8/site-packages/django/contrib/auth/hashers.py:609
+#: venv/lib/python3.8/site-packages/django/contrib/auth/hashers.py:666
+#: venv/lib/python3.8/site-packages/django/contrib/auth/hashers.py:708
+#: venv/lib/python3.8/site-packages/django/contrib/auth/hashers.py:879
+msgid "salt"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/hashers.py:330
+#: venv/lib/python3.8/site-packages/django/contrib/auth/hashers.py:427
+#: venv/lib/python3.8/site-packages/django/contrib/auth/hashers.py:610
+#: venv/lib/python3.8/site-packages/django/contrib/auth/hashers.py:667
+#: venv/lib/python3.8/site-packages/django/contrib/auth/hashers.py:709
+#: venv/lib/python3.8/site-packages/django/contrib/auth/hashers.py:766
+#: venv/lib/python3.8/site-packages/django/contrib/auth/hashers.py:821
+#: venv/lib/python3.8/site-packages/django/contrib/auth/hashers.py:880
+msgid "hash"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/hashers.py:421
+msgid "variety"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/hashers.py:422
+msgid "version"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/hashers.py:423
+msgid "memory cost"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/hashers.py:424
+msgid "time cost"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/hashers.py:425
+#: venv/lib/python3.8/site-packages/django/contrib/auth/hashers.py:608
+msgid "parallelism"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/hashers.py:511
+#: venv/lib/python3.8/site-packages/django/contrib/auth/hashers.py:606
+msgid "work factor"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/hashers.py:513
+msgid "checksum"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/hashers.py:607
+msgid "block size"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/models.py:62
+#: venv/lib/python3.8/site-packages/django/contrib/auth/models.py:116
+msgid "name"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/models.py:68
+msgid "codename"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/models.py:73
+msgid "permission"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/models.py:74
+#: venv/lib/python3.8/site-packages/django/contrib/auth/models.py:119
+msgid "permissions"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/models.py:126
+msgid "group"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/models.py:127
+#: venv/lib/python3.8/site-packages/django/contrib/auth/models.py:258
+msgid "groups"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/models.py:249
+msgid "superuser status"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/models.py:251
+msgid ""
+"Designates that this user has all permissions without explicitly "
+"assigning them."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/models.py:260
+msgid ""
+"The groups this user belongs to. A user will get all permissions granted "
+"to each of their groups."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/models.py:269
+msgid "user permissions"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/models.py:271
+msgid "Specific permissions for this user."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/models.py:345
+msgid "username"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/models.py:348
+msgid "Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/models.py:353
+msgid "A user with that username already exists."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/models.py:356
+msgid "first name"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/models.py:357
+msgid "last name"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/models.py:358
+msgid "email address"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/models.py:360
+msgid "staff status"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/models.py:362
+msgid "Designates whether the user can log into this admin site."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/models.py:365
+msgid "active"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/models.py:367
+msgid ""
+"Designates whether this user should be treated as active. Unselect this "
+"instead of deleting accounts."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/models.py:372
+msgid "date joined"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/models.py:382
+msgid "users"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/password_validation.py:110
+#, python-format
+msgid ""
+"This password is too short. It must contain at least %(min_length)d "
+"character."
+msgid_plural ""
+"This password is too short. It must contain at least %(min_length)d "
+"characters."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/password_validation.py:122
+#, python-format
+msgid "Your password must contain at least %(min_length)d character."
+msgid_plural "Your password must contain at least %(min_length)d characters."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/password_validation.py:206
+#, python-format
+msgid "The password is too similar to the %(verbose_name)s."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/password_validation.py:212
+msgid "Your password can’t be too similar to your other personal information."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/password_validation.py:245
+msgid "This password is too common."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/password_validation.py:250
+msgid "Your password can’t be a commonly used password."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/password_validation.py:261
+msgid "This password is entirely numeric."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/password_validation.py:266
+msgid "Your password can’t be entirely numeric."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/validators.py:11
+msgid ""
+"Enter a valid username. This value may contain only unaccented lowercase "
+"a-z and uppercase A-Z letters, numbers, and @/./+/-/_ characters."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/validators.py:21
+msgid ""
+"Enter a valid username. This value may contain only letters, numbers, and"
+" @/./+/-/_ characters."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/views.py:178
+msgid "Logged out"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/views.py:237
+msgid "Password reset"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/views.py:264
+msgid "Password reset sent"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/views.py:274
+msgid "Enter new password"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/views.py:346
+msgid "Password reset unsuccessful"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/views.py:355
+msgid "Password reset complete"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/views.py:367
+msgid "Password change"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/auth/views.py:390
+msgid "Password change successful"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/contenttypes/apps.py:16
+msgid "Content Types"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/contenttypes/models.py:141
+msgid "python model class name"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/contenttypes/models.py:146
+msgid "content types"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/contenttypes/views.py:18
+#, python-format
+msgid "Content type %(ct_id)s object has no associated model"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/contenttypes/views.py:24
+#, python-format
+msgid "Content type %(ct_id)s object %(obj_id)s doesn’t exist"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/contenttypes/views.py:32
+#, python-format
+msgid "%(ct_name)s objects don’t have a get_absolute_url() method"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/flatpages/admin.py:13
+msgid "Advanced options"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/flatpages/apps.py:8
+msgid "Flat Pages"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/flatpages/forms.py:11
+#: venv/lib/python3.8/site-packages/django/contrib/flatpages/models.py:9
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2564
+msgid "URL"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/flatpages/forms.py:14
+msgid ""
+"Example: “/about/contact/”. Make sure to have leading and trailing "
+"slashes."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/flatpages/forms.py:19
+msgid ""
+"This value must contain only letters, numbers, dots, underscores, dashes,"
+" slashes or tildes."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/flatpages/forms.py:33
+msgid "Example: “/about/contact”. Make sure to have a leading slash."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/flatpages/forms.py:47
+msgid "URL is missing a leading slash."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/flatpages/forms.py:52
+msgid "URL is missing a trailing slash."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/flatpages/forms.py:69
+#, python-format
+msgid "Flatpage with url %(url)s already exists for site %(site)s"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/flatpages/models.py:10
+msgid "title"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/flatpages/models.py:11
+msgid "content"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/flatpages/models.py:12
+msgid "enable comments"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/flatpages/models.py:14
+msgid "template name"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/flatpages/models.py:17
+msgid ""
+"Example: “flatpages/contact_page.html”. If this isn’t provided, the "
+"system will use “flatpages/default.html”."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/flatpages/models.py:23
+msgid "registration required"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/flatpages/models.py:24
+msgid "If this is checked, only logged-in users will be able to view the page."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/flatpages/models.py:29
+#: venv/lib/python3.8/site-packages/django/contrib/sites/models.py:93
+msgid "sites"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/flatpages/models.py:33
+msgid "flat page"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/flatpages/models.py:34
+msgid "flat pages"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/gis/apps.py:9
+msgid "GIS"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/gis/views.py:8
+msgid "No feeds are registered."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/gis/views.py:14
+#, python-format
+msgid "Slug %r isn’t registered."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/gis/db/models/fields.py:81
+msgid "The base GIS field."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/gis/db/models/fields.py:232
+msgid "The base Geometry field — maps to the OpenGIS Specification Geometry type."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/gis/db/models/fields.py:332
+msgid "Point"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/gis/db/models/fields.py:339
+msgid "Line string"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/gis/db/models/fields.py:346
+msgid "Polygon"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/gis/db/models/fields.py:353
+msgid "Multi-point"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/gis/db/models/fields.py:360
+msgid "Multi-line string"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/gis/db/models/fields.py:367
+msgid "Multi polygon"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/gis/db/models/fields.py:374
+msgid "Geometry collection"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/gis/db/models/fields.py:380
+msgid "Extent Aggregate Field"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/gis/db/models/fields.py:395
+msgid "Raster Field"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/gis/forms/fields.py:21
+msgid "No geometry value provided."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/gis/forms/fields.py:22
+msgid "Invalid geometry value."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/gis/forms/fields.py:23
+msgid "Invalid geometry type."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/gis/forms/fields.py:24
+msgid ""
+"An error occurred when transforming the geometry to the SRID of the "
+"geometry form field."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/humanize/apps.py:7
+msgid "Humanize"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/humanize/templatetags/humanize.py:35
+msgctxt "ordinal 11, 12, 13"
+msgid "{}th"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/humanize/templatetags/humanize.py:39
+msgctxt "ordinal 0"
+msgid "{}th"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/humanize/templatetags/humanize.py:41
+msgctxt "ordinal 1"
+msgid "{}st"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/humanize/templatetags/humanize.py:43
+msgctxt "ordinal 2"
+msgid "{}nd"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/humanize/templatetags/humanize.py:45
+msgctxt "ordinal 3"
+msgid "{}rd"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/humanize/templatetags/humanize.py:47
+msgctxt "ordinal 4"
+msgid "{}th"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/humanize/templatetags/humanize.py:49
+msgctxt "ordinal 5"
+msgid "{}th"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/humanize/templatetags/humanize.py:51
+msgctxt "ordinal 6"
+msgid "{}th"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/humanize/templatetags/humanize.py:53
+msgctxt "ordinal 7"
+msgid "{}th"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/humanize/templatetags/humanize.py:55
+msgctxt "ordinal 8"
+msgid "{}th"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/humanize/templatetags/humanize.py:57
+msgctxt "ordinal 9"
+msgid "{}th"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/humanize/templatetags/humanize.py:88
+#, python-format
+msgid "%(value)s million"
+msgid_plural "%(value)s million"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/humanize/templatetags/humanize.py:89
+#, python-format
+msgid "%(value)s billion"
+msgid_plural "%(value)s billion"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/humanize/templatetags/humanize.py:90
+#, python-format
+msgid "%(value)s trillion"
+msgid_plural "%(value)s trillion"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/humanize/templatetags/humanize.py:93
+#, python-format
+msgid "%(value)s quadrillion"
+msgid_plural "%(value)s quadrillion"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/humanize/templatetags/humanize.py:99
+#, python-format
+msgid "%(value)s quintillion"
+msgid_plural "%(value)s quintillion"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/humanize/templatetags/humanize.py:105
+#, python-format
+msgid "%(value)s sextillion"
+msgid_plural "%(value)s sextillion"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/humanize/templatetags/humanize.py:109
+#, python-format
+msgid "%(value)s septillion"
+msgid_plural "%(value)s septillion"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/humanize/templatetags/humanize.py:111
+#, python-format
+msgid "%(value)s octillion"
+msgid_plural "%(value)s octillion"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/humanize/templatetags/humanize.py:112
+#, python-format
+msgid "%(value)s nonillion"
+msgid_plural "%(value)s nonillion"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/humanize/templatetags/humanize.py:113
+#, python-format
+msgid "%(value)s decillion"
+msgid_plural "%(value)s decillion"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/humanize/templatetags/humanize.py:114
+#, python-format
+msgid "%(value)s googol"
+msgid_plural "%(value)s googol"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/humanize/templatetags/humanize.py:158
+msgid "one"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/humanize/templatetags/humanize.py:159
+msgid "two"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/humanize/templatetags/humanize.py:160
+msgid "three"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/humanize/templatetags/humanize.py:161
+msgid "four"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/humanize/templatetags/humanize.py:162
+msgid "five"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/humanize/templatetags/humanize.py:163
+msgid "six"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/humanize/templatetags/humanize.py:164
+msgid "seven"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/humanize/templatetags/humanize.py:165
+msgid "eight"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/humanize/templatetags/humanize.py:166
+msgid "nine"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/humanize/templatetags/humanize.py:188
+msgid "today"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/humanize/templatetags/humanize.py:190
+msgid "tomorrow"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/humanize/templatetags/humanize.py:192
+msgid "yesterday"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/messages/apps.py:15
+msgid "Messages"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/postgres/apps.py:54
+msgid "PostgreSQL extensions"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/postgres/validators.py:38
+#, python-format
+msgid "Some keys were missing: %(keys)s"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/postgres/validators.py:39
+#, python-format
+msgid "Some unknown keys were provided: %(keys)s"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/postgres/validators.py:80
+#, python-format
+msgid ""
+"Ensure that the upper bound of the range is not greater than "
+"%(limit_value)s."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/postgres/validators.py:89
+#, python-format
+msgid "Ensure that the lower bound of the range is not less than %(limit_value)s."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/postgres/fields/array.py:21
+#: venv/lib/python3.8/site-packages/django/contrib/postgres/forms/array.py:17
+#: venv/lib/python3.8/site-packages/django/contrib/postgres/forms/array.py:185
+#, python-format
+msgid "Item %(nth)s in the array did not validate:"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/postgres/fields/array.py:22
+msgid "Nested arrays must have the same length."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/postgres/fields/hstore.py:15
+msgid "Map of strings to strings/nulls"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/postgres/fields/hstore.py:17
+#, python-format
+msgid "The value of “%(key)s” is not a string or null."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/postgres/forms/hstore.py:17
+msgid "Could not load JSON data."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/postgres/forms/hstore.py:18
+msgid "Input must be a JSON dictionary."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/postgres/forms/ranges.py:42
+msgid "Enter two valid values."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/postgres/forms/ranges.py:43
+msgid "The start of the range must not exceed the end of the range."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/postgres/forms/ranges.py:99
+msgid "Enter two whole numbers."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/postgres/forms/ranges.py:105
+msgid "Enter two numbers."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/postgres/forms/ranges.py:111
+msgid "Enter two valid date/times."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/postgres/forms/ranges.py:117
+msgid "Enter two valid dates."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/redirects/apps.py:8
+msgid "Redirects"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/redirects/models.py:7
+#: venv/lib/python3.8/site-packages/django/contrib/sites/models.py:92
+msgid "site"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/redirects/models.py:9
+msgid "redirect from"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/redirects/models.py:12
+msgid ""
+"This should be an absolute path, excluding the domain name. Example: "
+"“/events/search/”."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/redirects/models.py:18
+msgid "redirect to"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/redirects/models.py:21
+msgid ""
+"This can be either an absolute path (as above) or a full URL starting "
+"with a scheme such as “https://”."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/redirects/models.py:28
+msgid "redirect"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/redirects/models.py:29
+msgid "redirects"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/sessions/apps.py:7
+msgid "Sessions"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/sessions/base_session.py:27
+msgid "session key"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/sessions/base_session.py:28
+msgid "session data"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/sessions/base_session.py:29
+msgid "expire date"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/sessions/base_session.py:35
+msgid "session"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/sessions/base_session.py:36
+msgid "sessions"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/sitemaps/apps.py:8
+msgid "Site Maps"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/sites/apps.py:13
+msgid "Sites"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/sites/models.py:20
+msgid "The domain name cannot contain any spaces or tabs."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/sites/models.py:81
+msgid "domain name"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/sites/models.py:86
+msgid "display name"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/staticfiles/apps.py:9
+msgid "Static Files"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/contrib/syndication/apps.py:7
+msgid "Syndication"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/core/paginator.py:30
+msgid "…"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/core/paginator.py:50
+msgid "That page number is not an integer"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/core/paginator.py:52
+msgid "That page number is less than 1"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/core/paginator.py:54
+msgid "That page contains no results"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/core/validators.py:22
+msgid "Enter a valid value."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/core/validators.py:104
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:752
+msgid "Enter a valid URL."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/core/validators.py:165
+msgid "Enter a valid integer."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/core/validators.py:176
+msgid "Enter a valid email address."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/core/validators.py:259
+msgid ""
+"Enter a valid “slug” consisting of letters, numbers, underscores or "
+"hyphens."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/core/validators.py:266
+msgid ""
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores,"
+" or hyphens."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/core/validators.py:279
+#: venv/lib/python3.8/site-packages/django/core/validators.py:287
+#: venv/lib/python3.8/site-packages/django/core/validators.py:316
+msgid "Enter a valid IPv4 address."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/core/validators.py:296
+#: venv/lib/python3.8/site-packages/django/core/validators.py:317
+msgid "Enter a valid IPv6 address."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/core/validators.py:308
+#: venv/lib/python3.8/site-packages/django/core/validators.py:315
+msgid "Enter a valid IPv4 or IPv6 address."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/core/validators.py:351
+msgid "Enter only digits separated by commas."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/core/validators.py:357
+#, python-format
+msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/core/validators.py:392
+#, python-format
+msgid "Ensure this value is less than or equal to %(limit_value)s."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/core/validators.py:401
+#, python-format
+msgid "Ensure this value is greater than or equal to %(limit_value)s."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/core/validators.py:410
+#, python-format
+msgid "Ensure this value is a multiple of step size %(limit_value)s."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/core/validators.py:461
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:347
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:386
+msgid "Enter a number."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/core/validators.py:543
+#, python-format
+msgid ""
+"File extension “%(extension)s” is not allowed. Allowed extensions are: "
+"%(allowed_extensions)s."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/core/validators.py:605
+msgid "Null characters are not allowed."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/base.py:1425
+#, python-format
+msgid "%(model_name)s with this %(field_labels)s already exists."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/constraints.py:17
+#, python-format
+msgid "Constraint “%(name)s” is violated."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:128
+#, python-format
+msgid "Value %(value)r is not a valid choice."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:129
+msgid "This field cannot be null."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:130
+msgid "This field cannot be blank."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:131
+#, python-format
+msgid "%(model_name)s with this %(field_label)s already exists."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:132
+#, python-format
+msgid "%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:173
+#, python-format
+msgid "Field of type: %(field_type)s"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1094
+#, python-format
+msgid "“%(value)s” value must be either True or False."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1095
+#, python-format
+msgid "“%(value)s” value must be either True, False, or None."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1097
+msgid "Boolean (Either True or False)"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1147
+#, python-format
+msgid "String (up to %(max_length)s)"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1149
+msgid "String (unlimited)"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1253
+msgid "Comma-separated integers"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1353
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid date format. It must be in YYYY-MM-DD "
+"format."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1357
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1492
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD) but it is an "
+"invalid date."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1362
+msgid "Date (without time)"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1488
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ] format."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1496
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ]) but it is an invalid date/time."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1502
+msgid "Date (with time)"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1626
+#, python-format
+msgid "“%(value)s” value must be a decimal number."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1628
+msgid "Decimal number"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1788
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in [DD] "
+"[[HH:]MM:]ss[.uuuuuu] format."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1793
+msgid "Duration"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1845
+msgid "Email address"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1870
+msgid "File path"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1948
+#, python-format
+msgid "“%(value)s” value must be a float."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1950
+msgid "Floating point number"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1990
+#, python-format
+msgid "“%(value)s” value must be an integer."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1992
+msgid "Integer"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2088
+msgid "Big (8 byte) integer"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2105
+msgid "Small integer"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2113
+msgid "IPv4 address"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2144
+msgid "IP address"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2237
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2238
+#, python-format
+msgid "“%(value)s” value must be either None, True or False."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2240
+msgid "Boolean (Either True, False or None)"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2291
+msgid "Positive big integer"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2306
+msgid "Positive integer"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2321
+msgid "Positive small integer"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2337
+#, python-format
+msgid "Slug (up to %(max_length)s)"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2373
+msgid "Text"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2447
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in "
+"HH:MM[:ss[.uuuuuu]] format."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2451
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is "
+"an invalid time."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2456
+msgid "Time"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2588
+msgid "Raw binary data"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2653
+#, python-format
+msgid "“%(value)s” is not a valid UUID."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py:2655
+msgid "Universally unique identifier"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/files.py:232
+msgid "File"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/files.py:393
+msgid "Image"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/json.py:26
+msgid "A JSON object"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/json.py:28
+msgid "Value must be valid JSON."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/related.py:919
+#, python-format
+msgid "%(model)s instance with %(field)s %(value)r does not exist."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/related.py:921
+msgid "Foreign Key (type determined by related field)"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/related.py:1212
+msgid "One-to-one relationship"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/related.py:1269
+#, python-format
+msgid "%(from)s-%(to)s relationship"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/related.py:1271
+#, python-format
+msgid "%(from)s-%(to)s relationships"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/db/models/fields/related.py:1319
+msgid "Many-to-many relationship"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/boundfield.py:184
+msgid ":?.!"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:91
+msgid "This field is required."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:298
+msgid "Enter a whole number."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:467
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:1241
+msgid "Enter a valid date."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:490
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:1242
+msgid "Enter a valid time."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:517
+msgid "Enter a valid date/time."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:551
+msgid "Enter a valid duration."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:552
+msgid "The number of days must be between {min_days} and {max_days}."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:621
+msgid "No file was submitted. Check the encoding type on the form."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:622
+msgid "No file was submitted."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:623
+msgid "The submitted file is empty."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:629
+msgid "Please either submit a file or check the clear checkbox, not both."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:693
+msgid ""
+"Upload a valid image. The file you uploaded was either not an image or a "
+"corrupted image."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:856
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:948
+#: venv/lib/python3.8/site-packages/django/forms/models.py:1565
+#, python-format
+msgid "Select a valid choice. %(value)s is not one of the available choices."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:951
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:1070
+#: venv/lib/python3.8/site-packages/django/forms/models.py:1564
+msgid "Enter a list of values."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:1071
+msgid "Enter a complete value."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:1310
+msgid "Enter a valid UUID."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/fields.py:1340
+msgid "Enter a valid JSON."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/forms.py:98
+msgid ":"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/forms.py:244
+#: venv/lib/python3.8/site-packages/django/forms/forms.py:328
+#, python-format
+msgid "(Hidden field %(name)s) %(error)s"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/formsets.py:62
+#, python-format
+msgid ""
+"ManagementForm data is missing or has been tampered with. Missing fields:"
+" %(field_names)s. You may need to file a bug report if the issue "
+"persists."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/formsets.py:484
+#: venv/lib/python3.8/site-packages/django/forms/formsets.py:491
+msgid "Order"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/formsets.py:499
+msgid "Delete"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/models.py:886
+#, python-format
+msgid "Please correct the duplicate data for %(field)s."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/models.py:890
+#, python-format
+msgid "Please correct the duplicate data for %(field)s, which must be unique."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/models.py:897
+#, python-format
+msgid ""
+"Please correct the duplicate data for %(field_name)s which must be unique"
+" for the %(lookup)s in %(date_field)s."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/models.py:907
+msgid "Please correct the duplicate values below."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/models.py:1338
+msgid "The inline value did not match the parent instance."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/models.py:1428
+msgid "Select a valid choice. That choice is not one of the available choices."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/models.py:1568
+#, python-format
+msgid "“%(pk)s” is not a valid value."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/utils.py:225
+#, python-format
+msgid ""
+"%(datetime)s couldn’t be interpreted in time zone %(current_timezone)s; "
+"it may be ambiguous or it may not exist."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/widgets.py:463
+msgid "Clear"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/forms/widgets.py:464
+msgid "Currently"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/template/defaultfilters.py:861
+msgid "yes,no,maybe"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/template/defaultfilters.py:891
+#: venv/lib/python3.8/site-packages/django/template/defaultfilters.py:908
+#, python-format
+msgid "%(size)d byte"
+msgid_plural "%(size)d bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.8/site-packages/django/template/defaultfilters.py:910
+#, python-format
+msgid "%s KB"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/template/defaultfilters.py:912
+#, python-format
+msgid "%s MB"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/template/defaultfilters.py:914
+#, python-format
+msgid "%s GB"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/template/defaultfilters.py:916
+#, python-format
+msgid "%s TB"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/template/defaultfilters.py:918
+#, python-format
+msgid "%s PB"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dateformat.py:73
+msgid "p.m."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dateformat.py:74
+msgid "a.m."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dateformat.py:79
+msgid "PM"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dateformat.py:80
+msgid "AM"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dateformat.py:152
+msgid "midnight"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dateformat.py:154
+msgid "noon"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:7
+msgid "Monday"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:8
+msgid "Tuesday"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:9
+msgid "Wednesday"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:10
+msgid "Thursday"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:11
+msgid "Friday"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:12
+msgid "Saturday"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:13
+msgid "Sunday"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:16
+msgid "Mon"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:17
+msgid "Tue"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:18
+msgid "Wed"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:19
+msgid "Thu"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:20
+msgid "Fri"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:21
+msgid "Sat"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:22
+msgid "Sun"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:25
+msgid "January"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:26
+msgid "February"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:27
+msgid "March"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:28
+msgid "April"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:29
+msgid "May"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:30
+msgid "June"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:31
+msgid "July"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:32
+msgid "August"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:33
+msgid "September"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:34
+msgid "October"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:35
+msgid "November"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:36
+msgid "December"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:39
+msgid "jan"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:40
+msgid "feb"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:41
+msgid "mar"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:42
+msgid "apr"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:43
+msgid "may"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:44
+msgid "jun"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:45
+msgid "jul"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:46
+msgid "aug"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:47
+msgid "sep"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:48
+msgid "oct"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:49
+msgid "nov"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/dates.py:50
+msgid "dec"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/ipv6.py:8
+msgid "This is not a valid IPv6 address."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/text.py:77
+#, python-format
+msgctxt "String to return when truncating text"
+msgid "%(truncated_text)s…"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/utils/text.py:273
+#: venv/lib/python3.8/site-packages/django/utils/timesince.py:135
+msgid ", "
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/csrf.py:111
+msgid "Forbidden"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/csrf.py:112
+msgid "CSRF verification failed. Request aborted."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/csrf.py:115
+msgid ""
+"You are seeing this message because this HTTPS site requires a “Referer "
+"header” to be sent by your web browser, but none was sent. This header is"
+" required for security reasons, to ensure that your browser is not being "
+"hijacked by third parties."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/csrf.py:121
+msgid ""
+"If you have configured your browser to disable “Referer” headers, please "
+"re-enable them, at least for this site, or for HTTPS connections, or for "
+"“same-origin” requests."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/csrf.py:126
+msgid ""
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag"
+" or including the “Referrer-Policy: no-referrer” header, please remove "
+"them. The CSRF protection requires the “Referer” header to do strict "
+"referer checking. If you’re concerned about privacy, use alternatives "
+"like <a rel=\"noreferrer\" …> for links to third-party sites."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/csrf.py:135
+msgid ""
+"You are seeing this message because this site requires a CSRF cookie when"
+" submitting forms. This cookie is required for security reasons, to "
+"ensure that your browser is not being hijacked by third parties."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/csrf.py:141
+msgid ""
+"If you have configured your browser to disable cookies, please re-enable "
+"them, at least for this site, or for “same-origin” requests."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/csrf.py:148
+msgid "More information is available with DEBUG=True."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/static.py:38
+msgid "Directory indexes are not allowed here."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/static.py:40
+#, python-format
+msgid "“%(path)s” does not exist"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/generic/dates.py:44
+msgid "No year specified"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/generic/dates.py:64
+#: venv/lib/python3.8/site-packages/django/views/generic/dates.py:115
+#: venv/lib/python3.8/site-packages/django/views/generic/dates.py:214
+msgid "Date out of range"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/generic/dates.py:94
+msgid "No month specified"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/generic/dates.py:147
+msgid "No day specified"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/generic/dates.py:194
+msgid "No week specified"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/generic/dates.py:349
+#: venv/lib/python3.8/site-packages/django/views/generic/dates.py:380
+#, python-format
+msgid "No %(verbose_name_plural)s available"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/generic/dates.py:651
+#, python-format
+msgid ""
+"Future %(verbose_name_plural)s not available because "
+"%(class_name)s.allow_future is False."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/generic/dates.py:692
+#, python-format
+msgid "Invalid date string “%(datestr)s” given format “%(format)s”"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/generic/detail.py:56
+#, python-format
+msgid "No %(verbose_name)s found matching the query"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/generic/list.py:70
+msgid "Page is not “last”, nor can it be converted to an int."
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/generic/list.py:77
+#, python-format
+msgid "Invalid page (%(page_number)s): %(message)s"
+msgstr ""
+
+#: venv/lib/python3.8/site-packages/django/views/generic/list.py:169
+#, python-format
+msgid "Empty list and “%(class_name)s.allow_empty” is False."
+msgstr ""
+
+#~ msgid "Головне мееню"
+#~ msgstr "Mein meenu"
+

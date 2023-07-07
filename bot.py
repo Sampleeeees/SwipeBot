@@ -10,8 +10,9 @@ from aiogram.fsm.storage.redis import RedisStorage
 from aioredis import Redis
 from middleware.locale import Localization
 
-redis = Redis(host='redis')
-i18n = I18n(path='locales', default_locale='uk', domain='ApiSwipeBot')
+#redis = Redis(host='redis')
+redis = Redis()
+i18n = I18n(path='locales', default_locale='uk', domain='SwipeBot')
 
 
 

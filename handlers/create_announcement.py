@@ -1040,7 +1040,7 @@ async def announcement_create_confirm(message: types.Message, state: FSMContext,
     if current_state == AnnouncementCreateState.confirm:
         if message.text == _('Створити'):
             data = await state.get_data()
-            await state.clear()
+            await state.set_state(MenuState.menu)
             await message.answer(_('Чудово. \n'
                                  'Створюю квартиру в системі...'),
                                  reply_markup=ReplyKeyboardRemove())
@@ -1182,7 +1182,7 @@ async def announcement_create_confirm(message: types.Message, state: FSMContext,
             await message.answer(_('Надішліть локацію через гео телеграму:'),
                                  reply_markup=request_location_kb())
         elif message.text == _('Відмінити'):
-            await state.clear()
+            await state.set_state(MenuState.menu)
             await bot.delete_message(chat_id=message.chat.id, message_id=message.message_id - 1)
             await message.answer(_('Ви повернулися до профілю'),
                                  reply_markup=main_kb())

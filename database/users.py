@@ -3,7 +3,8 @@ from pymongo import MongoClient, IndexModel
 
 from config.config_reader import config
 
-client = MongoClient(config.mongo_url)
+#client = MongoClient(config.mongo_url)
+client = MongoClient()
 mydb = client[config.mongo_db]
 
 mydb.users.create_indexes([

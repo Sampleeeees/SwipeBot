@@ -14,21 +14,20 @@ from states.profile_state import ProfileState
 
 router = Router()
 
-@router.message(MenuState.menu, F.text == 'Профіль')
-@router.message(MenuState.menu, F.text == 'Profile')
+@router.message(MenuState.menu, F.text == __('Профіль'))
 async def cmd_profile(message: types.Message, state: FSMContext):
 
     new = await state.set_state(ProfileState.my_profile)
     print(new)
     await message.answer(
         text=_('Привіт {user} ти перейшов в меню профілю').format(user=message.from_user.full_name),
-        reply_markup=profile_menu_kb()
+        reply_markup=profile_menu_kb(), locale=get_i18n().current_locale
     )
 
 @router.message(ProfileState.my_profile, F.text == __('Відмінити'))
 async def cmd_cancel_profile(message: types.Message, state: FSMContext):
     current = await state.get_state()
-    await state.set_state(LoginState.menu)
+    await state.set_state(MenuState.menu)
     print('Cancel', current)
     await message.answer(
         text='Ти тепер в головному меню',

@@ -2,14 +2,14 @@ from typing import Union
 
 import httpx
 from aiogram.types import PhotoSize
-
+from aiogram.utils.i18n import gettext as _
 from services.api_client import UserAPIClient
 
 def balcony_validator(balcony: str) -> bool:
     """
     Валідація чи користувач обрав варіант з кнопок чи вводить відповідь вручну яка не відноситься до значень
     """
-    if balcony in ['Так', 'Ні']:
+    if balcony in [_('Так'), _('Ні')]:
         return True
     return False
 
@@ -19,7 +19,7 @@ def living_condition_validator(condition: str) -> bool:
     :param condition: Текст який прийшов від користувача
     :return: Повернення булевого значення
     """
-    if condition in ['Чорнова', 'Потрібен ремонт', 'В жилому стані']:
+    if condition in [_('Чорнова'), _('Потрібен ремонт'), _('В жилому стані')]:
         return True
     return False
 
@@ -29,7 +29,7 @@ def planning_validator(planning: str) -> bool:
     :param planning: Текст який користувач надіслав
     :return: Повернення булевого значення
     """
-    if planning in ['Студія-санвузол', 'Студія']:
+    if planning in [_('Студія-санвузол'), _('Студія')]:
         return True
     return False
 
