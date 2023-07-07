@@ -39,11 +39,12 @@ def set_tokens(data: dict, user_id: int) -> None:
 
 async def set_language_user_db(user_id, lang) -> None:
     user_data = User.find_user(user_id=user_id)
+    print('user_data', user_data)
     if user_data:
         user = User(
             user_id=user_data.get('user_id'),
-            token=user_data.get('access'),
-            refresh_token=user_data.get('refresh'),
+            token=user_data.get('token'),
+            refresh_token=user_data.get('refresh_token'),
             is_auth=user_data['is_auth'],
             language=lang
         )

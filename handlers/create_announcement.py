@@ -784,7 +784,7 @@ async def announcement_create_planning(message: types.Message, state: FSMContext
         data = await state.update_data(planning_name=planning)
         if current_state == AnnouncementCreateState.planning:
             await state.set_state(AnnouncementCreateState.scheme)
-            await message.answer('Тепер надішліть схему квартири як фото', reply_markup=ReplyKeyboardRemove())
+            await message.answer(_('Тепер надішліть схему квартири як фото'), reply_markup=ReplyKeyboardRemove())
         elif current_state == AnnouncementCreateState.planning_edit:
             await state.set_state(AnnouncementCreateState.confirm)
             await message.answer_photo(
