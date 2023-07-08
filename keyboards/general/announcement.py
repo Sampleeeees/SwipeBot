@@ -9,7 +9,8 @@ async def house_kb(user_id: int) -> ReplyKeyboardMarkup:
     houses = await user.get_houses()
     for house in houses:
         kb.button(text=house.get('name'))
-    kb.adjust(4)
+    kb.button(text=_('Відмінити'))
+    kb.adjust(len(houses), 1)
     return kb.as_markup(resize_keyboard=True)
 
 async def section_kb(house_name: str, user_id: int) -> ReplyKeyboardMarkup:
@@ -19,7 +20,8 @@ async def section_kb(house_name: str, user_id: int) -> ReplyKeyboardMarkup:
     for section in sections:
         if section['house'] == house_name:
             kb.button(text=section['name'])
-    kb.adjust(4)
+    kb.button(text=_('Назад'))
+    kb.adjust(len(sections), 1)
     return kb.as_markup(resize_keyboard=True)
 
 async def corps_kb(house_name: str, user_id: int) -> ReplyKeyboardMarkup:
@@ -29,7 +31,8 @@ async def corps_kb(house_name: str, user_id: int) -> ReplyKeyboardMarkup:
     for corp in corps:
         if corp['house'] == house_name:
             kb.button(text=corp['name'])
-    kb.adjust(4)
+    kb.button(text=_('Назад'))
+    kb.adjust(len(corps), 1)
     return kb.as_markup(resize_keyboard=True)
 
 async def floor_kb(house_name: str, user_id: int) -> ReplyKeyboardMarkup:
@@ -39,7 +42,8 @@ async def floor_kb(house_name: str, user_id: int) -> ReplyKeyboardMarkup:
     for floor in floors:
         if floor['house'] == house_name:
             kb.button(text=floor['name'])
-    kb.adjust(4)
+    kb.button(text=_('Назад'))
+    kb.adjust(len(floors), 1)
     return kb.as_markup(resize_keyboard=True)
 
 
@@ -48,7 +52,8 @@ def balcony_bool() -> ReplyKeyboardMarkup:
     kb = ReplyKeyboardBuilder()
     kb.button(text=_('Так'))
     kb.button(text=_('Ні'))
-    kb.adjust(2)
+    kb.button(text=_('Назад'))
+    kb.adjust(2, 1)
     return kb.as_markup(resize_keyboard=True)
 
 def living_condition_kb() -> ReplyKeyboardMarkup:
@@ -56,21 +61,31 @@ def living_condition_kb() -> ReplyKeyboardMarkup:
     kb.button(text=_('Чорнова'))
     kb.button(text=_('Потрібен ремонт'))
     kb.button(text=_('В жилому стані'))
-    kb.adjust(3)
+    kb.button(text=_('Назад'))
+    kb.adjust(3, 1)
     return kb.as_markup(resize_keyboard=True)
 
 def planning_kb() -> ReplyKeyboardMarkup:
     kb = ReplyKeyboardBuilder()
     kb.button(text=_('Студія-санвузол'))
     kb.button(text=_('Студія'))
+    kb.button(text=_('Назад'))
+    kb.adjust(2, 1)
     return kb.as_markup(resize_keyboard=True)
 
 
 def request_location_kb() -> ReplyKeyboardMarkup:
     kb = ReplyKeyboardBuilder()
     kb.button(text=_('Надіслати геолокацію'), request_location=True)
+    kb.button(text=_('Назад'))
+    kb.adjust(1)
     return kb.as_markup(resize_keyboard=True)
 
+
+def back_create_announcement() -> ReplyKeyboardMarkup:
+    kb = ReplyKeyboardBuilder()
+    kb.button(text=_('Назад'))
+    return kb.as_markup(resize_keyboard=True)
 
 def edit_announcement_kb() -> ReplyKeyboardMarkup:
     kb = ReplyKeyboardBuilder()
